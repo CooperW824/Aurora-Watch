@@ -412,6 +412,18 @@
     [
       "3ca855de-33e1-4742-b952-4e80ee0f08b6",
       "Root"
+    ],
+    [
+      "158d1430-32d7-4a2e-a48f-d463032a7558",
+      "USB & Debug"
+    ],
+    [
+      "48cdbbd7-34d6-4c6d-b523-5eee0bb171ae",
+      "LEDs & Controller"
+    ],
+    [
+      "ac4bf41b-f426-4794-a3f1-0796f3b1bdc2",
+      "Sensors"
     ]
   ],
   "text_variables": {}

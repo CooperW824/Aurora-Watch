@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "IS31FL3237-QFLS4-TR")(type "KiCad")(uri "${KIPRJMOD}/IS31FL3237-QFLS4-TR.kicad_sym")(options "")(descr ""))
+  (lib (name "LSM303AGRTR")(type "KiCad")(uri "${KIPRJMOD}/LSM303AGRTR.kicad_sym")(options "")(descr ""))
+)
