@@ -424,6 +424,10 @@
     [
       "ac4bf41b-f426-4794-a3f1-0796f3b1bdc2",
       "Sensors"
+    ],
+    [
+      "179d2ac2-1c96-407e-ab01-437817cf932c",
+      "Power & Battery"
     ]
   ],
   "text_variables": {}

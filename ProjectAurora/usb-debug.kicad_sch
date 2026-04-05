@@ -5,37 +5,35 @@
 	(uuid "61f34fce-cb06-4cca-8d46-e4052be48950")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Conn_ARM_SWD_TagConnect_TC2030-NL"
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
-			(in_bom no)
+			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J"
-				(at 2.54 11.43 0)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_ARM_SWD_TagConnect_TC2030-NL"
-				(at 2.54 8.89 0)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
-				(at 0 -17.78 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
-				(at 0 -15.24 0)
+			(property "Footprint" ""
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -43,7 +41,16 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs"
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
 				(at 0 0 0)
 				(effects
 					(font
@@ -52,7 +59,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "Cortex Debug Connector ARM SWD JTAG"
+			(property "ki_keywords" "test point tp"
 				(at 0 0 0)
 				(effects
 					(font
@@ -61,7 +68,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "*TC2030*"
+			(property "ki_fp_filters" "Pin* Test*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -70,11 +77,24 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_ARM_SWD_TagConnect_TC2030-NL_0_0"
-				(pin power_in line
-					(at -2.54 10.16 270)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
 					(length 2.54)
-					(name "VCC"
+					(name "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -87,112 +107,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -10.16 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 7.62 5.08 180)
-					(length 2.54)
-					(name "~{RESET}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "SWCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "TCK" output line)
-				)
-				(pin bidirectional line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "SWDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "TMS" bidirectional line)
-				)
-				(pin input line
-					(at 7.62 -5.08 180)
-					(length 2.54)
-					(name "SWO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(alternate "TDO" input line)
-				)
-			)
-			(symbol "Conn_ARM_SWD_TagConnect_TC2030-NL_0_1"
-				(rectangle
-					(start -5.08 7.62)
-					(end 5.08 -7.62)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
 					)
 				)
 			)
@@ -2798,10 +2712,6 @@
 		(at 104.14 85.09)
 		(uuid "ada8b031-07d7-418c-80a6-e75eb4d1692d")
 	)
-	(no_connect
-		(at 63.5 125.73)
-		(uuid "f73c6125-177b-457e-a9ba-2676323562a3")
-	)
 	(wire
 		(pts
 			(xy 119.38 133.35) (xy 119.38 135.89)
@@ -3144,7 +3054,7 @@
 	)
 	(hierarchical_label "SWCLK"
 		(shape input)
-		(at 63.5 120.65 0)
+		(at 44.45 118.11 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3177,7 +3087,7 @@
 	)
 	(hierarchical_label "NRST"
 		(shape input)
-		(at 63.5 115.57 0)
+		(at 40.64 121.92 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3188,7 +3098,7 @@
 	)
 	(hierarchical_label "SWDIO"
 		(shape input)
-		(at 63.5 123.19 0)
+		(at 48.26 114.3 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4301,6 +4211,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 44.45 118.11 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4554b24d-3f2d-4cee-86e2-72df396adc9a")
+		(property "Reference" "TP5"
+			(at 46.99 120.1419 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 46.99 122.6819 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 39.37 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 39.37 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7aaa27b4-1cdd-41d8-91a7-321d51ee648c")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/158d1430-32d7-4a2e-a48f-d463032a7558"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 40.64 121.92 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "489b886b-6ba0-4125-96d9-cda1587c466f")
+		(property "Reference" "TP6"
+			(at 43.18 123.9519 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 43.18 126.4919 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 35.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 35.56 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 40.64 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2cab51e9-92d8-4745-9b2a-78f35e06d787")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/158d1430-32d7-4a2e-a48f-d463032a7558"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 106.68 109.22 270)
 		(unit 1)
@@ -4428,6 +4472,73 @@
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/158d1430-32d7-4a2e-a48f-d463032a7558"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 48.26 114.3 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "59e66476-635c-48d2-8830-1e1154c1b1ed")
+		(property "Reference" "TP4"
+			(at 50.8 116.3319 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 50.8 118.8719 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 48.26 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab4a1b3c-935d-48ed-9027-4e6047781616")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/158d1430-32d7-4a2e-a48f-d463032a7558"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -5186,17 +5297,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_ARM_SWD_TagConnect_TC2030-NL")
-		(at 55.88 120.65 0)
+		(lib_id "Connector:TestPoint")
+		(at 36.83 125.73 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a2503735-4465-46c6-94c3-1ed643a05b31")
-		(property "Reference" "J2"
-			(at 49.53 119.3799 0)
+		(uuid "9d2d6917-42da-4d44-a222-a885d02c5206")
+		(property "Reference" "TP7"
+			(at 39.37 127.7619 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5204,8 +5315,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_ARM_SWD_TagConnect_TC2030-NL"
-			(at 49.53 121.9199 0)
+		(property "Value" "TestPoint"
+			(at 39.37 130.3019 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5213,8 +5324,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical"
-			(at 55.88 138.43 0)
+		(property "Footprint" ""
+			(at 31.75 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5222,8 +5333,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.tag-connect.com/wp-content/uploads/bsk-pdf-manager/TC2030-CTX_1.pdf"
-			(at 55.88 135.89 0)
+		(property "Datasheet" "~"
+			(at 31.75 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5231,37 +5342,22 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Tag-Connect ARM Cortex SWD JTAG connector, 6 pin, no legs"
-			(at 55.88 120.65 0)
+		(property "Description" "test point"
+			(at 36.83 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "3"
-			(uuid "7b3b1775-8f22-4a67-b3f7-54eb2b71d89d")
-		)
-		(pin "6"
-			(uuid "7c0e81a1-f634-4eb2-a3df-cb7410154b5e")
-		)
-		(pin "2"
-			(uuid "7cc67e29-5813-4dfe-80ef-cffed4a32b6e")
-		)
-		(pin "4"
-			(uuid "0748bc5b-099a-4816-a2f1-b0af98ac30a6")
-		)
-		(pin "5"
-			(uuid "d3254870-8909-4e86-9c47-9f08e4f94985")
 		)
 		(pin "1"
-			(uuid "ba3df7b0-3679-4285-9ea7-e2d34bc1cead")
+			(uuid "ca6f77e1-cfca-4231-a5ef-377f153d70ca")
 		)
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/158d1430-32d7-4a2e-a48f-d463032a7558"
-					(reference "J2")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -5689,16 +5785,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 53.34 130.81 0)
+		(at 36.83 125.73 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ced765de-530f-4845-b8e9-fa6ee2c29ef2")
 		(property "Reference" "#PWR024"
-			(at 53.34 137.16 0)
+			(at 36.83 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5707,15 +5802,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 53.34 135.89 0)
+			(at 36.83 122.428 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 53.34 130.81 0)
+			(at 36.83 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5724,7 +5820,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 53.34 130.81 0)
+			(at 36.83 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5733,7 +5829,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 130.81 0)
+			(at 36.83 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5818,6 +5914,73 @@
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/158d1430-32d7-4a2e-a48f-d463032a7558"
 					(reference "R10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 53.34 110.49 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d229d839-5819-42c4-b30f-cbcfa0d025c2")
+		(property "Reference" "TP3"
+			(at 55.88 112.5219 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 55.88 115.0619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 53.34 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c94c364-d183-4fdd-bda9-a1a5bc8ee786")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/158d1430-32d7-4a2e-a48f-d463032a7558"
+					(reference "TP3")
 					(unit 1)
 				)
 			)

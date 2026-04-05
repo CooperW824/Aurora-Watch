@@ -1203,6 +1203,12 @@
 		(uuid "1e442e6f-e1bc-42ce-a4fa-597acca37f56")
 	)
 	(junction
+		(at 151.13 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "274a99c9-7795-4ef4-9d5b-ae4f9b8e5046")
+	)
+	(junction
 		(at 85.09 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1296,13 +1302,23 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 82.55) (xy 157.48 82.55)
+			(xy 120.65 82.55) (xy 151.13 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2af75a89-c212-4065-b01e-1935b8bedc38")
+	)
+	(wire
+		(pts
+			(xy 151.13 82.55) (xy 157.48 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b91d336-ac61-470d-a6b9-c77913841c34")
 	)
 	(wire
 		(pts
@@ -2003,7 +2019,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 147.32 90.17 0)
+		(at 151.13 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2012,7 +2028,7 @@
 		(fields_autoplaced yes)
 		(uuid "50007d0a-041f-479d-9385-b5e30f32edde")
 		(property "Reference" "#PWR054"
-			(at 147.32 96.52 0)
+			(at 151.13 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2021,7 +2037,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 147.32 95.25 0)
+			(at 151.13 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2029,7 +2045,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 90.17 0)
+			(at 151.13 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2038,7 +2054,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 90.17 0)
+			(at 151.13 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2047,7 +2063,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 147.32 90.17 0)
+			(at 151.13 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2546,6 +2562,75 @@
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/ac4bf41b-f426-4794-a3f1-0796f3b1bdc2"
 					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 151.13 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae8f75a4-c07f-4541-ad11-de44c3ba7652")
+		(property "Reference" "C26"
+			(at 151.638 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 151.892 88.646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.0952 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 151.13 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 151.13 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "15c2a936-6ece-4acc-8e05-71e8e31e75f6")
+		)
+		(pin "1"
+			(uuid "09cb9baa-50ee-4553-af4a-23d0b98854bd")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/ac4bf41b-f426-4794-a3f1-0796f3b1bdc2"
+					(reference "C26")
 					(unit 1)
 				)
 			)
