@@ -1,0 +1,9 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "LED")(type "KiCad")(uri "${KIPRJMOD}/LED.pretty")(options "")(descr ""))
+  (lib (name "IS31LF3237")(type "KiCad")(uri "${KIPRJMOD}/IS31LF3237.pretty")(options "")(descr ""))
+  (lib (name "Battery")(type "KiCad")(uri "${KIPRJMOD}/Battery.pretty")(options "")(descr ""))
+  (lib (name "ASCO")(type "KiCad")(uri "${KIPRJMOD}/ASCO.pretty")(options "")(descr ""))
+  (lib (name "Test-Point-Jumper")(type "KiCad")(uri "${KIPRJMOD}/Test-Point-Jumper.pretty")(options "")(descr ""))
+  (lib (name "EVP-AA202K")(type "KiCad")(uri "${KIPRJMOD}/EVP-AA202K.pretty")(options "")(descr ""))
+)

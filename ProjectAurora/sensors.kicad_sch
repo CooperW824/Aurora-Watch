@@ -1638,7 +1638,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 106.172 124.46 90)
 			(effects
 				(font
@@ -1705,7 +1705,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 62.23 88.5952 0)
 			(effects
 				(font
@@ -1840,7 +1840,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 139.3952 92.71 0)
 			(effects
 				(font
@@ -1975,7 +1975,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 95.25 105.7148 0)
 			(effects
 				(font
@@ -2110,7 +2110,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 158.4452 90.17 0)
 			(effects
 				(font
@@ -2310,7 +2310,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LGA-12"
+		(property "Footprint" "Package_LGA:LGA-12_2x2mm_P0.5mm"
 			(at 116.84 172.39 0)
 			(effects
 				(font
@@ -2594,7 +2594,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 152.0952 90.17 0)
 			(effects
 				(font

@@ -572,6 +572,194 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "EVP-AA202K:EVP-AA202K"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "S"
+				(at 26.67 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "EVP-AA202K"
+				(at 26.67 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "EVPAA202K"
+				(at 26.67 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C372.pdf"
+				(at 26.67 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "Switch Tactile N.O. SPST Rectangular Button J-Lead 0.02A 15VDC 200000Cycles 1.6N SMD T/R"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.9"
+				(at 26.67 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "667-EVP-AA202K"
+				(at 26.67 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EVP-AA202K?qs=WwqriLBepZvGlgrCpXPLMA%3D%3D"
+				(at 26.67 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Panasonic"
+				(at 26.67 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "EVP-AA202K"
+				(at 26.67 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "EVP-AA202K_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 25.4 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "NO_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "COM_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 0 180)
+					(length 5.08)
+					(name "NO_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 30.48 -2.54 180)
+					(length 5.08)
+					(name "COM_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "B2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_ST_STM32U0:STM32U031K8Ux"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1431,156 +1619,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 1.27 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Push button switch, generic, two pins"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -1869,6 +1907,12 @@
 		(uuid "7ed913c2-e7d4-4c29-b9f7-4ae6b3c66b5e")
 	)
 	(junction
+		(at 172.72 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8092f19a-e480-4e2d-82a8-49b8ba61149b")
+	)
+	(junction
 		(at 80.01 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1881,10 +1925,22 @@
 		(uuid "b0126a11-89ec-4258-bffe-96cb5bd48a5c")
 	)
 	(junction
-		(at 135.89 90.17)
+		(at 135.89 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d9dd30b5-bfe9-4c8e-aa06-a3f902f6c0a7")
+	)
+	(junction
+		(at 140.97 104.14)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d9dff1e4-b551-4cac-ad83-c4041e0d05f2")
+	)
+	(junction
+		(at 142.24 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e28e7689-c224-421a-b41d-1413918f3e5b")
 	)
 	(junction
 		(at 74.93 44.45)
@@ -1904,6 +1960,12 @@
 		(color 0 0 0 0)
 		(uuid "f6ef6814-486a-4117-bfa3-bf23e4b7181a")
 	)
+	(junction
+		(at 172.72 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f770b245-a695-498f-b2df-ad53d55e4e8b")
+	)
 	(no_connect
 		(at 76.2 74.93)
 		(uuid "05bba3ea-c8a7-424c-987f-e70de788bd65")
@@ -1917,6 +1979,10 @@
 		(uuid "54ee6036-47f4-4699-a91a-b886f2ef784d")
 	)
 	(no_connect
+		(at 76.2 82.55)
+		(uuid "69567a64-e8fc-4adf-8b1f-9ff2282c3846")
+	)
+	(no_connect
 		(at 76.2 72.39)
 		(uuid "9a912343-b43b-439b-8db6-7c0cdafb8298")
 	)
@@ -1927,10 +1993,6 @@
 	(no_connect
 		(at 76.2 77.47)
 		(uuid "c5d031de-4421-4e7e-9d27-9962cd66b069")
-	)
-	(no_connect
-		(at 76.2 59.69)
-		(uuid "e84ffcdf-0264-493b-966b-4b6f83144cbe")
 	)
 	(no_connect
 		(at 76.2 80.01)
@@ -1998,6 +2060,46 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 100.33) (xy 140.97 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a95b7e7-7185-45e8-a813-719d172ddcef")
+	)
+	(wire
+		(pts
+			(xy 172.72 106.68) (xy 175.26 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fdbcc2b-d01a-4170-914b-2b10883e9658")
+	)
+	(wire
+		(pts
+			(xy 142.24 106.68) (xy 142.24 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "201185dc-29e4-4bf4-995e-57b2f295ade2")
+	)
+	(wire
+		(pts
+			(xy 172.72 93.98) (xy 142.24 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31bdd2cb-998c-4baa-97f7-3707ba51742b")
+	)
+	(wire
+		(pts
 			(xy 96.52 44.45) (xy 101.6 44.45)
 		)
 		(stroke
@@ -2018,16 +2120,6 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 87.63) (xy 135.89 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a98fb28-8e7d-494c-a209-51e6ea5e9832")
-	)
-	(wire
-		(pts
 			(xy 74.93 33.02) (xy 74.93 36.83)
 		)
 		(stroke
@@ -2045,6 +2137,36 @@
 			(type default)
 		)
 		(uuid "462e668b-bb0d-4bdb-b57e-2fbaab8faec0")
+	)
+	(wire
+		(pts
+			(xy 172.72 90.17) (xy 175.26 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ac433ec-8c76-4337-9b62-5701124ee11a")
+	)
+	(wire
+		(pts
+			(xy 140.97 104.14) (xy 142.24 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b97bfdb-b291-416a-8844-1314b9d50afa")
+	)
+	(wire
+		(pts
+			(xy 172.72 83.82) (xy 172.72 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c5b72b4-97ba-40ea-b98d-2febe66e4c4b")
 	)
 	(wire
 		(pts
@@ -2078,13 +2200,33 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 90.17) (xy 142.24 90.17)
+			(xy 135.89 104.14) (xy 140.97 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6686c2a1-ccfd-42b7-939e-1de99e11050a")
+	)
+	(wire
+		(pts
+			(xy 142.24 90.17) (xy 142.24 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d362404-d17f-40c7-9352-923aab52d4ab")
+	)
+	(wire
+		(pts
+			(xy 140.97 100.33) (xy 140.97 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f8b9ce7-1f93-4529-8226-16f2cb255a12")
 	)
 	(wire
 		(pts
@@ -2115,6 +2257,16 @@
 			(type default)
 		)
 		(uuid "8f4ab2f8-c9c2-406d-92f7-1573b8d5b956")
+	)
+	(wire
+		(pts
+			(xy 172.72 110.49) (xy 142.24 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9259b87f-2566-464b-b531-961e73aef089")
 	)
 	(wire
 		(pts
@@ -2158,13 +2310,33 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 90.17) (xy 133.35 90.17)
+			(xy 172.72 90.17) (xy 172.72 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8e35cbd-a9b0-42fa-a036-001b934998b4")
+	)
+	(wire
+		(pts
+			(xy 135.89 104.14) (xy 133.35 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ad3cf653-440f-413d-ae45-cce585f3ed97")
+	)
+	(wire
+		(pts
+			(xy 142.24 83.82) (xy 172.72 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0bf77c0-6841-4056-b048-5348084cedb3")
 	)
 	(wire
 		(pts
@@ -2188,6 +2360,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 104.14) (xy 172.72 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1cae6d8-d7ef-41fd-8fe8-094ed11b15c1")
+	)
+	(wire
+		(pts
 			(xy 88.9 44.45) (xy 88.9 49.53)
 		)
 		(stroke
@@ -2195,6 +2377,16 @@
 			(type default)
 		)
 		(uuid "ce4d065b-92c8-402a-b408-98f8f3aed73f")
+	)
+	(wire
+		(pts
+			(xy 142.24 87.63) (xy 142.24 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cee21b10-f149-4b5b-b92a-3d304f2d8b93")
 	)
 	(wire
 		(pts
@@ -2296,6 +2488,26 @@
 		)
 		(uuid "f1ac44f0-d3dd-4a53-b2ac-97a2e0eaaddc")
 	)
+	(wire
+		(pts
+			(xy 172.72 106.68) (xy 172.72 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff18ca24-ce1c-4a30-8f50-e587d576907b")
+	)
+	(wire
+		(pts
+			(xy 135.89 87.63) (xy 142.24 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff67d040-22ae-40d7-8440-2d4ba476e6ef")
+	)
 	(label "I2C1_SCL"
 		(at 76.2 85.09 180)
 		(effects
@@ -2305,16 +2517,6 @@
 			(justify right bottom)
 		)
 		(uuid "0c19eae1-cb4e-44c8-88cc-099cdac58432")
-	)
-	(label "LED_SHUTDOWN"
-		(at 76.2 82.55 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0fc29256-8f74-4bad-ab6a-fcd53393a074")
 	)
 	(label "NRST"
 		(at 58.42 57.15 180)
@@ -2355,6 +2557,16 @@
 			(justify right bottom)
 		)
 		(uuid "27277daf-c4aa-487f-94f0-d3c99e5d9e78")
+	)
+	(label "LED_SHUTDOWN"
+		(at 76.2 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "294d97ed-5f5c-43f0-8fdf-6be838c2c72a")
 	)
 	(label "CHARGE_STAT_2"
 		(at 107.95 163.83 180)
@@ -2507,7 +2719,7 @@
 		(uuid "8e57c8aa-ba17-4fef-8936-ef07657c263b")
 	)
 	(label "Left-Button"
-		(at 133.35 90.17 180)
+		(at 133.35 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2733,7 +2945,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 134.112 83.82 90)
 			(effects
 				(font
@@ -2777,7 +2989,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 135.89 97.79 180)
+		(at 135.89 111.76 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2786,7 +2998,7 @@
 		(fields_autoplaced yes)
 		(uuid "05feb39e-510d-4f21-8893-6772a952a373")
 		(property "Reference" "#PWR095"
-			(at 135.89 93.98 0)
+			(at 135.89 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2795,7 +3007,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 135.89 102.87 0)
+			(at 135.89 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2803,7 +3015,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 135.89 97.79 0)
+			(at 135.89 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2812,7 +3024,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 135.89 97.79 0)
+			(at 135.89 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2821,7 +3033,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 135.89 97.79 0)
+			(at 135.89 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3001,7 +3213,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 57.912 92.71 90)
 			(effects
 				(font
@@ -3068,7 +3280,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 84.1248 36.83 0)
 			(effects
 				(font
@@ -3138,7 +3350,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 49.022 92.71 90)
 			(effects
 				(font
@@ -3207,7 +3419,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "ASCO:ABS07"
 			(at 52.07 66.04 0)
 			(effects
 				(font
@@ -3250,6 +3462,132 @@
 		)
 	)
 	(symbol
+		(lib_id "EVP-AA202K:EVP-AA202K")
+		(at 142.24 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e9e00d6-bcad-47d2-a83c-2757cfb1f274")
+		(property "Reference" "S2"
+			(at 157.48 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EVP-AA202K"
+			(at 157.48 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EVP-AA202K:EVPAA202K"
+			(at 168.91 199.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C372.pdf"
+			(at 168.91 299.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch Tactile N.O. SPST Rectangular Button J-Lead 0.02A 15VDC 200000Cycles 1.6N SMD T/R"
+			(at 142.24 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.9"
+			(at 168.91 499.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "667-EVP-AA202K"
+			(at 168.91 599.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EVP-AA202K?qs=WwqriLBepZvGlgrCpXPLMA%3D%3D"
+			(at 168.91 699.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 168.91 799.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "EVP-AA202K"
+			(at 168.91 899.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "A1"
+			(uuid "527d65cd-8cb7-44cc-8643-86b6a6c2d49a")
+		)
+		(pin "A2"
+			(uuid "3cdc7839-b16b-4981-95f0-dfa9e20205f5")
+		)
+		(pin "B2"
+			(uuid "52b7b7cf-d63c-4f23-aef5-d3da96e6c78d")
+		)
+		(pin "B1"
+			(uuid "25c6cbc9-21e1-44e4-b041-302d650f4503")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6"
+					(reference "S2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 74.93 40.64 180)
 		(unit 1)
@@ -3274,7 +3612,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 73.9648 36.83 0)
 			(effects
 				(font
@@ -3341,7 +3679,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 90.4748 36.83 0)
 			(effects
 				(font
@@ -3408,7 +3746,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 79.0448 36.83 0)
 			(effects
 				(font
@@ -3452,7 +3790,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 135.89 93.98 0)
+		(at 135.89 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3460,7 +3798,7 @@
 		(dnp no)
 		(uuid "45dcb8dc-7314-492d-bf10-3c2ef83310ef")
 		(property "Reference" "R20"
-			(at 137.0445 92.964 0)
+			(at 137.0445 106.934 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3469,7 +3807,7 @@
 			)
 		)
 		(property "Value" "10K"
-			(at 137.0445 95.25 0)
+			(at 137.0445 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3477,8 +3815,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 134.112 93.98 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 134.112 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3487,7 +3825,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 135.89 93.98 0)
+			(at 135.89 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3496,7 +3834,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 135.89 93.98 0)
+			(at 135.89 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3514,73 +3852,6 @@
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6"
 					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 147.32 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6b1119c6-43a8-4b71-91b9-6c5a8fcc96d7")
-		(property "Reference" "SW2"
-			(at 147.32 82.804 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 147.32 80.264 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 147.32 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82ca47ad-e174-456c-ae29-b98d7b053f18")
-		)
-		(pin "2"
-			(uuid "77b3d28d-d7f4-4a75-84a5-5b806ed558aa")
-		)
-		(instances
-			(project "ProjectAurora"
-				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6"
-					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -3655,7 +3926,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 152.4 87.63 90)
+		(at 175.26 90.17 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3664,7 +3935,7 @@
 		(fields_autoplaced yes)
 		(uuid "74f95ae7-e560-46df-838a-c2b6ab0b58db")
 		(property "Reference" "#PWR096"
-			(at 158.75 87.63 0)
+			(at 181.61 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3673,7 +3944,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.21 87.6299 90)
+			(at 179.07 90.1699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3682,7 +3953,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 87.63 0)
+			(at 175.26 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3691,7 +3962,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 87.63 0)
+			(at 175.26 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3700,7 +3971,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 87.63 0)
+			(at 175.26 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3919,73 +4190,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 147.32 90.17 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "976afc01-922b-4675-9b01-a25175d5bbf0")
-		(property "Reference" "SW1"
-			(at 148.59 97.028 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SW_Push"
-			(at 148.59 94.488 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 147.32 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7df97147-52c4-40e3-a236-b81959c609d3")
-		)
-		(pin "2"
-			(uuid "ad729f14-89c8-4de3-b2ee-4f64d6d5fd5e")
-		)
-		(instances
-			(project "ProjectAurora"
-				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 39.37 69.85 90)
 		(unit 1)
@@ -4010,7 +4214,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 43.18 68.8848 0)
 			(effects
 				(font
@@ -4053,8 +4257,134 @@
 		)
 	)
 	(symbol
+		(lib_id "EVP-AA202K:EVP-AA202K")
+		(at 142.24 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9be2ee8f-c796-441c-aeb0-11a0ab3140dc")
+		(property "Reference" "S1"
+			(at 157.48 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "EVP-AA202K"
+			(at 157.48 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "EVP-AA202K:EVPAA202K"
+			(at 168.91 182.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C372.pdf"
+			(at 168.91 282.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "Switch Tactile N.O. SPST Rectangular Button J-Lead 0.02A 15VDC 200000Cycles 1.6N SMD T/R"
+			(at 142.24 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.9"
+			(at 168.91 482.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "667-EVP-AA202K"
+			(at 168.91 582.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Panasonic/EVP-AA202K?qs=WwqriLBepZvGlgrCpXPLMA%3D%3D"
+			(at 168.91 682.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Panasonic"
+			(at 168.91 782.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "EVP-AA202K"
+			(at 168.91 882.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "A1"
+			(uuid "6d467848-a11f-4eee-b53f-96191e4b5816")
+		)
+		(pin "A2"
+			(uuid "db9f22c2-0be9-4d97-a3d5-fbaf7065eb21")
+		)
+		(pin "B2"
+			(uuid "c8307e1b-aba6-4018-aa68-cdacc92a177e")
+		)
+		(pin "B1"
+			(uuid "f1da73c5-6308-4aa2-b447-513221358d43")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6"
+					(reference "S1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 152.4 90.17 90)
+		(at 175.26 106.68 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4063,7 +4393,7 @@
 		(fields_autoplaced yes)
 		(uuid "aa39f21d-3831-4be1-b353-796a7f2a7dd2")
 		(property "Reference" "#PWR097"
-			(at 158.75 90.17 0)
+			(at 181.61 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4072,7 +4402,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 156.21 90.1699 90)
+			(at 179.07 106.6799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4081,7 +4411,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 90.17 0)
+			(at 175.26 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4090,7 +4420,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 90.17 0)
+			(at 175.26 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4099,7 +4429,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 152.4 90.17 0)
+			(at 175.26 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4144,7 +4474,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 95.5548 36.83 0)
 			(effects
 				(font
@@ -4193,7 +4523,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c3add9a2-5c2d-42c1-bb8e-1faeb75ac435")
 		(property "Reference" "TP2"
 			(at 52.832 50.292 90)
@@ -4213,7 +4543,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Test-Point-Jumper:2-Pin-Jumper"
 			(at 64.77 52.07 0)
 			(effects
 				(font
@@ -4280,7 +4610,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 43.18 61.2648 0)
 			(effects
 				(font

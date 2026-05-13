@@ -3396,7 +3396,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 114.3 114.6048 0)
 			(effects
 				(font
@@ -3533,7 +3533,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_USB:USB_C_Receptacle_GCT_USB4105-xx-A_16P_TopMnt_Horizontal"
 			(at 180.34 87.63 0)
 			(effects
 				(font
@@ -3621,7 +3621,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "2632e529-b011-445a-9270-2645302407b5")
 		(property "Reference" "TP1"
@@ -3642,7 +3642,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Test-Point-Jumper:2-Pin-Jumper"
 			(at 130.81 110.49 0)
 			(effects
 				(font
@@ -4217,7 +4217,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "4554b24d-3f2d-4cee-86e2-72df396adc9a")
 		(property "Reference" "TP5"
@@ -4238,7 +4238,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 39.37 118.11 0)
 			(effects
 				(font
@@ -4284,7 +4284,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "489b886b-6ba0-4125-96d9-cda1587c466f")
 		(property "Reference" "TP6"
@@ -4305,7 +4305,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 35.56 121.92 0)
 			(effects
 				(font
@@ -4484,7 +4484,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "59e66476-635c-48d2-8830-1e1154c1b1ed")
 		(property "Reference" "TP4"
@@ -4505,7 +4505,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 43.18 114.3 0)
 			(effects
 				(font
@@ -4571,7 +4571,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 92.71 55.88 0)
 			(effects
 				(font
@@ -4716,7 +4716,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 132.842 82.55 90)
 			(effects
 				(font
@@ -4916,7 +4916,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 137.16 107.188 90)
 			(effects
 				(font
@@ -4986,7 +4986,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 132.842 92.71 90)
 			(effects
 				(font
@@ -5053,7 +5053,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 165.1 96.012 90)
 			(effects
 				(font
@@ -5120,7 +5120,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 165.1 93.472 90)
 			(effects
 				(font
@@ -5254,7 +5254,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 116.84 132.3848 0)
 			(effects
 				(font
@@ -5303,7 +5303,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "9d2d6917-42da-4d44-a222-a885d02c5206")
 		(property "Reference" "TP7"
@@ -5324,7 +5324,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 31.75 125.73 0)
 			(effects
 				(font
@@ -5388,7 +5388,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 116.84 126.0348 0)
 			(effects
 				(font
@@ -5521,7 +5521,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 114.3 108.2548 0)
 			(effects
 				(font
@@ -5591,7 +5591,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 97.79 55.88 0)
 			(effects
 				(font
@@ -5741,7 +5741,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 201.6252 62.23 0)
 			(effects
 				(font
@@ -5877,7 +5877,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.012 48.26 90)
 			(effects
 				(font
@@ -5926,7 +5926,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d229d839-5819-42c4-b30f-cbcfa0d025c2")
 		(property "Reference" "TP3"
@@ -5947,7 +5947,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 48.26 110.49 0)
 			(effects
 				(font
@@ -6014,7 +6014,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 189.992 58.42 90)
 			(effects
 				(font
@@ -6149,7 +6149,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 90.932 48.26 90)
 			(effects
 				(font

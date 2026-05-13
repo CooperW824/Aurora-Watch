@@ -5,4 +5,6 @@
   (lib (name "BQ25185DLHR")(type "KiCad")(uri "${KIPRJMOD}/BQ25185DLHR.kicad_sym")(options "")(descr ""))
   (lib (name "MAX17048G+T10")(type "KiCad")(uri "${KIPRJMOD}/MAX17048G+T10.kicad_sym")(options "")(descr ""))
   (lib (name "TPS63900DSKR")(type "KiCad")(uri "${KIPRJMOD}/TPS63900DSKR.kicad_sym")(options "")(descr ""))
+  (lib (name "XINGLIGHT XL-1615RGBC-YG")(type "KiCad")(uri "${KIPRJMOD}/XINGLIGHT XL-1615RGBC-YG.kicad_sym")(options "")(descr ""))
+  (lib (name "EVP-AA202K")(type "KiCad")(uri "${KIPRJMOD}/EVP-AA202K.kicad_sym")(options "")(descr ""))
 )

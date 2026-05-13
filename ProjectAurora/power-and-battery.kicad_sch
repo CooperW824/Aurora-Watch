@@ -2983,7 +2983,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 70.8152 82.55 0)
 			(effects
 				(font
@@ -3051,7 +3051,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SON50P250X250X80-11N-D"
+		(property "Footprint" "Package_SON:WSON-10-1EP_2.5x2.5mm_P0.5mm_EP1.2x2mm"
 			(at 184.15 207.95 0)
 			(effects
 				(font
@@ -3464,7 +3464,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 106.172 137.16 90)
 			(effects
 				(font
@@ -3534,7 +3534,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 119.0752 82.55 0)
 			(effects
 				(font
@@ -3670,7 +3670,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal"
 			(at 43.18 88.646 90)
 			(effects
 				(font
@@ -4164,7 +4164,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 114.3 89.408 90)
 			(effects
 				(font
@@ -4297,7 +4297,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 114.3 91.948 90)
 			(effects
 				(font
@@ -4433,7 +4433,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 110.49 99.06 0)
 			(effects
 				(font
@@ -4442,7 +4442,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588919985616138240"
 			(at 110.49 99.06 0)
 			(effects
 				(font
@@ -4702,7 +4702,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 195.2752 113.03 0)
 			(effects
 				(font
@@ -4904,7 +4904,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_Coilcraft_0805HQ_2012Metric"
 			(at 198.12 118.11 0)
 			(effects
 				(font
@@ -4913,7 +4913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586176145175810048"
 			(at 198.12 118.11 0)
 			(effects
 				(font
@@ -4972,7 +4972,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SON40P220X200X80-11N"
+		(property "Footprint" "Package_DFN_QFN:Texas_DLH0010A_WSON-10-1EP_2.2x2mm_P0.4mm_EP0.9x1.5mm_ThermalVias"
 			(at 106.68 177.47 0)
 			(effects
 				(font
@@ -5383,7 +5383,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SON50P200X200X80-9N-D"
+		(property "Footprint" "Package_DFN_QFN:TDFN-8-1EP_2x2mm_P0.5mm_EP0.8x1.2mm"
 			(at 96.52 220.65 0)
 			(effects
 				(font
@@ -5792,7 +5792,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 195.2752 123.19 0)
 			(effects
 				(font
@@ -5861,7 +5861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 49.2252 92.71 0)
 			(effects
 				(font
@@ -6130,7 +6130,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 55.5752 138.43 0)
 			(effects
 				(font
@@ -6265,7 +6265,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 127.762 88.9 90)
 			(effects
 				(font
@@ -6399,7 +6399,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 153.67 119.888 90)
 			(effects
 				(font
@@ -6468,7 +6468,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 62.992 91.44 90)
 			(effects
 				(font

@@ -144,509 +144,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED_RGBA"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 9.398 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LED_RGBA"
-				(at 0 -8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "RGB LED, red/green/blue/anode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "LED RGB diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_RGBA_0_0"
-				(text "R"
-					(at -1.905 3.81 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "G"
-					(at -1.905 -1.27 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "B"
-					(at -1.905 -6.35 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "LED_RGBA_0_1"
-				(polyline
-					(pts
-						(xy -1.27 6.35) (xy -1.27 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 6.35) (xy -1.27 3.81) (xy -1.27 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 5.08) (xy -2.54 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 5.08) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -3.81) (xy -1.27 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -2.54 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy 1.27 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 6.35) (xy 0.508 7.874) (xy -0.254 7.874) (xy 0.508 7.874) (xy 0.508 7.112)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy 0.508 2.794) (xy -0.254 2.794) (xy 0.508 2.794) (xy 0.508 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 -3.81) (xy 0.508 -2.286) (xy -0.254 -2.286) (xy 0.508 -2.286) (xy 0.508 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 6.35) (xy 1.524 7.874) (xy 0.762 7.874) (xy 1.524 7.874) (xy 1.524 7.112)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 1.524 2.794) (xy 0.762 2.794) (xy 1.524 2.794) (xy 1.524 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.81) (xy 1.524 -2.286) (xy 0.762 -2.286) (xy 1.524 -2.286) (xy 1.524 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 6.35) (xy 1.27 3.81) (xy -1.27 5.08) (xy 1.27 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 6.35)
-					(end 1.27 6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 3.81)
-					(end 1.27 6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 1.27)
-					(end 1.27 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 -1.27)
-					(end 1.27 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -3.81) (xy 1.27 -6.35) (xy -1.27 -5.08) (xy 1.27 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 2.032 -5.08) (xy 2.032 5.08) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 2.794 8.382)
-					(end -2.794 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LED_RGBA_1_1"
-				(pin passive line
-					(at -5.08 5.08 0)
-					(length 2.54)
-					(name "RK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "GK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 2.54)
-					(name "BK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1697,6 +1194,487 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 -0.762 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "XL-1615RGBC-YG_0_0"
+				(text "R"
+					(at -1.905 12.7 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "G"
+					(at -1.905 7.62 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "B"
+					(at -1.905 2.54 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "XL-1615RGBC-YG_0_1"
+				(rectangle
+					(start -2.794 17.272)
+					(end 2.794 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 15.24) (xy -1.27 12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 15.24) (xy -1.27 12.7) (xy -1.27 12.7)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 13.97) (xy -2.54 13.97)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 13.97) (xy 1.27 13.97)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 10.16) (xy -1.27 7.62)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 10.16) (xy -1.27 7.62) (xy -1.27 7.62)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 8.89) (xy -2.54 8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 5.08) (xy -1.27 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.81) (xy -2.54 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 3.81) (xy 1.27 3.81)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 15.24) (xy 0.508 16.764) (xy -0.254 16.764) (xy 0.508 16.764) (xy 0.508 16.002)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 10.16) (xy 0.508 11.684) (xy -0.254 11.684) (xy 0.508 11.684) (xy 0.508 10.922)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 5.08) (xy 0.508 6.604) (xy -0.254 6.604) (xy 0.508 6.604) (xy 0.508 5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 15.24) (xy 1.524 16.764) (xy 0.762 16.764) (xy 1.524 16.764) (xy 1.524 16.002)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 10.16) (xy 1.524 11.684) (xy 0.762 11.684) (xy 1.524 11.684) (xy 1.524 10.922)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 5.08) (xy 1.524 6.604) (xy 0.762 6.604) (xy 1.524 6.604) (xy 1.524 5.842)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 15.24) (xy 1.27 12.7) (xy -1.27 13.97) (xy 1.27 15.24)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.27 15.24)
+					(end 1.27 15.24)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.27 12.7)
+					(end 1.27 15.24)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 10.16) (xy 1.27 7.62) (xy -1.27 8.89) (xy 1.27 10.16)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.27 10.16)
+					(end 1.27 10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 8.89) (xy -1.27 8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 8.89) (xy 2.54 8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 1.27 7.62)
+					(end 1.27 10.16)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 5.08) (xy 1.27 2.54) (xy -1.27 3.81) (xy 1.27 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 3.81) (xy 2.032 3.81) (xy 2.032 13.97) (xy 1.27 13.97)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 8.89)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "XL-1615RGBC-YG_1_1"
+				(pin passive line
+					(at -5.08 13.97 0)
+					(length 2.54)
+					(name "RK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 8.89 0)
+					(length 2.54)
+					(name "GK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 3.81 0)
+					(length 2.54)
+					(name "BK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 8.89 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -2018,6 +1996,16 @@
 		)
 		(uuid "00fdaf0e-6d86-4e04-9776-539a79ca0297")
 	)
+	(label "OUT17"
+		(at 195.58 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0159a4d7-a456-464c-a4b6-cd74ca88465f")
+	)
 	(label "OUT36"
 		(at 115.57 85.09 0)
 		(effects
@@ -2047,6 +2035,16 @@
 			(justify right bottom)
 		)
 		(uuid "04896f26-ec33-4079-9d9f-967b4d8f2629")
+	)
+	(label "OUT13"
+		(at 195.58 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "04fa124d-ea3c-434c-b496-f927af9415f3")
 	)
 	(label "OUT28"
 		(at 115.57 64.77 0)
@@ -2078,6 +2076,16 @@
 		)
 		(uuid "0b8fb2ab-b0b4-486d-af46-65f4c58bed9a")
 	)
+	(label "OUT15"
+		(at 195.58 62.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0ee81c64-745b-4fca-9265-57f2b32abab9")
+	)
 	(label "OUT19"
 		(at 85.09 100.33 180)
 		(effects
@@ -2107,6 +2115,16 @@
 			(justify right bottom)
 		)
 		(uuid "124ac202-8202-4d68-a2fb-7367eaea001e")
+	)
+	(label "OUT1"
+		(at 195.58 148.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "15cbf787-5819-4826-94d7-2c24b261cca3")
 	)
 	(label "OUT16"
 		(at 85.09 90.17 180)
@@ -2168,6 +2186,16 @@
 		)
 		(uuid "25847b8c-4859-4535-a58b-fcd03c8055ef")
 	)
+	(label "OUT18"
+		(at 195.58 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "26e0427a-f846-4b18-91eb-be9b991b8a72")
+	)
 	(label "OUT4"
 		(at 85.09 59.69 180)
 		(effects
@@ -2208,17 +2236,17 @@
 		)
 		(uuid "303e7b16-4643-4cbf-9155-f74ec2a8a0dd")
 	)
-	(label "OUT1"
-		(at 195.58 27.94 180)
+	(label "OUT2"
+		(at 195.58 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "31dcf5f3-28f4-4db2-a23f-2487c032d6a7")
+		(uuid "332a218e-a274-494e-8573-b33b6084a709")
 	)
-	(label "OUT8"
+	(label "OUT11"
 		(at 195.58 81.28 180)
 		(effects
 			(font
@@ -2226,27 +2254,17 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "3cc735f4-9cb9-4a34-98a5-c1a2d5384f9d")
+		(uuid "3ebc1107-85aa-4a14-b40a-cd06ea74fb36")
 	)
-	(label "OUT12"
-		(at 195.58 110.49 180)
+	(label "OUT14"
+		(at 195.58 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "3dbc3c59-7980-48ea-9877-14f10e145fb9")
-	)
-	(label "OUT13"
-		(at 195.58 124.46 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "49187f5f-33b5-4b01-9b15-6e61dded3cd2")
+		(uuid "46b49c3d-0d89-4a87-b507-5e99075baa71")
 	)
 	(label "OUT32"
 		(at 115.57 74.93 0)
@@ -2269,24 +2287,14 @@
 		(uuid "4c6f7127-80df-4147-8cbb-2bcb099c1a4a")
 	)
 	(label "OUT6"
-		(at 195.58 62.23 180)
+		(at 195.58 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "4ce30ce9-569b-4005-bf17-275d0841f551")
-	)
-	(label "OUT10"
-		(at 195.58 100.33 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5531432f-d511-425a-8a36-f30e2924dbd4")
+		(uuid "54e20ccd-47dc-42ab-a859-3b59c328c581")
 	)
 	(label "OUT12"
 		(at 85.09 80.01 180)
@@ -2308,6 +2316,16 @@
 		)
 		(uuid "5c1a9a18-ff67-4ee9-9262-e4a2bb99fb29")
 	)
+	(label "OUT5"
+		(at 195.58 129.54 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5da6dc6a-9254-4dff-aa04-32c323fc3de9")
+	)
 	(label "OUT30"
 		(at 115.57 69.85 0)
 		(effects
@@ -2327,16 +2345,6 @@
 			(justify right bottom)
 		)
 		(uuid "688601c0-aaac-4525-a78d-167cfbb8836b")
-	)
-	(label "OUT9"
-		(at 195.58 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "698dc7fb-7a34-49f0-98c9-7b558fe5fcd0")
 	)
 	(label "OUT18"
 		(at 85.09 95.25 180)
@@ -2358,16 +2366,6 @@
 		)
 		(uuid "6c03527c-5652-4117-bf49-78bfbf03422d")
 	)
-	(label "OUT2"
-		(at 195.58 33.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6ce7c0a3-2f31-42b9-be71-f6e69bbdde22")
-	)
 	(label "OUT30"
 		(at 226.06 110.49 180)
 		(effects
@@ -2388,26 +2386,6 @@
 		)
 		(uuid "6e8a72e7-0db6-4da4-a256-2894d29ead00")
 	)
-	(label "OUT3"
-		(at 195.58 38.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "77c90f50-c96f-49f2-85da-6f66e3f6b055")
-	)
-	(label "OUT18"
-		(at 195.58 158.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "784920ae-5640-4b1b-9307-63574364b8ba")
-	)
 	(label "OUT15"
 		(at 85.09 87.63 180)
 		(effects
@@ -2417,16 +2395,6 @@
 			(justify right bottom)
 		)
 		(uuid "803d0b9f-88db-4517-a863-6972a08f036a")
-	)
-	(label "OUT14"
-		(at 195.58 129.54 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "82ba61f0-87cc-4399-9ee3-8d377877e2df")
 	)
 	(label "OUT10"
 		(at 85.09 74.93 180)
@@ -2438,16 +2406,6 @@
 		)
 		(uuid "85924d2d-3f8a-4b1e-a584-24d75e506362")
 	)
-	(label "OUT16"
-		(at 195.58 148.59 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8aec2b62-49b9-4eaa-8dba-11316eb08f8d")
-	)
 	(label "OUT17"
 		(at 85.09 92.71 180)
 		(effects
@@ -2457,6 +2415,16 @@
 			(justify right bottom)
 		)
 		(uuid "8dfe9711-a751-42a8-bd1b-1242d53a522b")
+	)
+	(label "OUT9"
+		(at 195.58 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "93ad06b3-04d3-4e71-9a28-5fa37939d345")
 	)
 	(label "OUT22"
 		(at 226.06 53.34 180)
@@ -2468,7 +2436,7 @@
 		)
 		(uuid "9cb1146c-7550-48ec-9722-d6423ef28680")
 	)
-	(label "OUT11"
+	(label "OUT8"
 		(at 195.58 105.41 180)
 		(effects
 			(font
@@ -2476,7 +2444,27 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "a17429cc-2846-43bc-91d6-387d33645906")
+		(uuid "9cbc604e-be33-4759-8334-7b937559478c")
+	)
+	(label "OUT3"
+		(at 195.58 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "9e5a5214-7143-4d1d-8f5e-0cca9f4223f8")
+	)
+	(label "OUT7"
+		(at 195.58 100.33 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a390595f-af4e-47e9-a9f8-a01d62334573")
 	)
 	(label "OUT35"
 		(at 226.06 153.67 180)
@@ -2487,6 +2475,26 @@
 			(justify right bottom)
 		)
 		(uuid "a644166d-d077-4110-881b-db853561f3fb")
+	)
+	(label "OUT4"
+		(at 195.58 124.46 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a69c94e9-7610-4fed-b96e-29e924e7179c")
+	)
+	(label "OUT12"
+		(at 195.58 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a87372ab-637d-4ba3-9f57-d36246a7aae2")
 	)
 	(label "OUT21"
 		(at 85.09 105.41 180)
@@ -2517,6 +2525,16 @@
 			(justify left bottom)
 		)
 		(uuid "b37f27f6-a16f-4b47-b4a2-ecec5f4ed54c")
+	)
+	(label "OUT10"
+		(at 195.58 76.2 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b5dba855-0f32-434a-83fd-007ccd4b0f5d")
 	)
 	(label "OUT26"
 		(at 115.57 59.69 0)
@@ -2568,16 +2586,6 @@
 		)
 		(uuid "bf7cdc1f-0f5c-4a21-b2ed-e473e9124942")
 	)
-	(label "OUT7"
-		(at 195.58 76.2 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "c1b05a60-8b82-4c64-8fd9-d9c1325fc24e")
-	)
 	(label "OUT27"
 		(at 226.06 86.36 180)
 		(effects
@@ -2598,15 +2606,15 @@
 		)
 		(uuid "c59a488d-e2a0-40b8-8f39-fbbf662c735f")
 	)
-	(label "OUT5"
-		(at 195.58 57.15 180)
+	(label "OUT16"
+		(at 195.58 27.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "cb819e1b-e4e8-4954-9b9e-f3fca333fa6c")
+		(uuid "c7c6eab8-2f84-46e9-98eb-eadf23570783")
 	)
 	(label "OUT33"
 		(at 115.57 77.47 0)
@@ -2627,16 +2635,6 @@
 			(justify right bottom)
 		)
 		(uuid "cc0c56c2-daa1-459c-a6e6-8ae13ad2bb7d")
-	)
-	(label "OUT4"
-		(at 195.58 52.07 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "cdc0189f-1057-44ed-98e5-f21d436130aa")
 	)
 	(label "OUT13"
 		(at 85.09 82.55 180)
@@ -2668,16 +2666,6 @@
 		)
 		(uuid "e04d838a-1f21-43fc-b9f2-3f3f58770db6")
 	)
-	(label "OUT15"
-		(at 195.58 134.62 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e3530ec1-513b-4e2c-86dc-0bec584567e4")
-	)
 	(label "OUT23"
 		(at 226.06 58.42 180)
 		(effects
@@ -2687,16 +2675,6 @@
 			(justify right bottom)
 		)
 		(uuid "e3f6f8c4-8e98-46b6-bac7-55f79ce1ea1b")
-	)
-	(label "OUT17"
-		(at 195.58 153.67 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ec71315c-fc9d-49f0-9de2-38a720ddde5d")
 	)
 	(label "OUT23"
 		(at 85.09 110.49 180)
@@ -2896,8 +2874,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 231.14 153.67 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 231.14 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2921,8 +2899,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 231.14 154.94 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 231.14 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2931,7 +2909,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 154.94 0)
+			(at 231.14 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2940,7 +2918,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 231.14 153.67 0)
+			(at 231.14 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2970,8 +2948,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 231.14 58.42 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 231.14 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2995,8 +2973,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 231.14 59.69 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 231.14 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3005,7 +2983,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 59.69 0)
+			(at 231.14 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3014,7 +2992,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 231.14 58.42 0)
+			(at 231.14 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3136,7 +3114,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IS31FL3237QFLS4TR"
+		(property "Footprint" "IS31LF3237:IS31FL3237QFLS4TR"
 			(at 111.76 152.07 0)
 			(effects
 				(font
@@ -3360,8 +3338,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 200.66 81.28 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 200.66 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3385,8 +3363,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 200.66 82.55 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 200.66 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3395,7 +3373,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 82.55 0)
+			(at 200.66 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3404,7 +3382,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 200.66 81.28 0)
+			(at 200.66 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3458,7 +3436,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 119.38 99.568 90)
 			(effects
 				(font
@@ -3527,7 +3505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 145.7452 100.33 0)
 			(effects
 				(font
@@ -3770,8 +3748,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 231.14 129.54 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 231.14 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3795,8 +3773,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 231.14 130.81 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 231.14 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3805,7 +3783,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 130.81 0)
+			(at 231.14 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3814,7 +3792,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 231.14 129.54 0)
+			(at 231.14 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3870,7 +3848,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 155.9052 100.33 0)
 			(effects
 				(font
@@ -4006,7 +3984,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 152.0952 87.63 0)
 			(effects
 				(font
@@ -4183,8 +4161,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 200.66 105.41 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 200.66 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4208,8 +4186,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 200.66 106.68 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 200.66 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4218,7 +4196,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 106.68 0)
+			(at 200.66 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4227,7 +4205,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 200.66 105.41 0)
+			(at 200.66 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4257,8 +4235,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 231.14 34.29 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 231.14 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4282,8 +4260,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 231.14 35.56 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 231.14 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4292,7 +4270,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 35.56 0)
+			(at 231.14 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4301,7 +4279,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 231.14 34.29 0)
+			(at 231.14 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4529,8 +4507,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 200.66 153.67 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 200.66 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4554,8 +4532,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 200.66 154.94 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 200.66 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4564,7 +4542,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 154.94 0)
+			(at 200.66 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4573,7 +4551,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 200.66 153.67 0)
+			(at 200.66 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4603,8 +4581,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 231.14 81.28 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 231.14 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4628,8 +4606,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 231.14 82.55 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 231.14 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4638,7 +4616,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 82.55 0)
+			(at 231.14 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4647,7 +4625,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 231.14 81.28 0)
+			(at 231.14 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4677,8 +4655,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 200.66 33.02 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 200.66 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4702,8 +4680,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 200.66 34.29 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 200.66 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4712,7 +4690,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 34.29 0)
+			(at 200.66 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4721,7 +4699,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 200.66 33.02 0)
+			(at 200.66 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4885,8 +4863,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 231.14 105.41 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 231.14 114.3 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4910,8 +4888,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 231.14 106.68 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 231.14 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4920,7 +4898,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 231.14 106.68 0)
+			(at 231.14 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4929,7 +4907,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 231.14 105.41 0)
+			(at 231.14 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5227,8 +5205,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 200.66 57.15 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 200.66 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5252,8 +5230,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 200.66 58.42 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 200.66 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5262,7 +5240,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 58.42 0)
+			(at 200.66 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5271,7 +5249,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 200.66 57.15 0)
+			(at 200.66 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5301,8 +5279,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 200.66 129.54 0)
+		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
+		(at 200.66 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5326,8 +5304,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 200.66 130.81 0)
+		(property "Footprint" "LED:XL-1615RGBC-YG"
+			(at 200.66 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5336,7 +5314,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 130.81 0)
+			(at 200.66 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5345,7 +5323,7 @@
 			)
 		)
 		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 200.66 129.54 0)
+			(at 200.66 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5536,7 +5514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 137.922 83.82 90)
 			(effects
 				(font
