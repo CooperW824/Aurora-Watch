@@ -5,6 +5,113 @@
 	(uuid "647d8faa-99b5-4917-990a-8a38c707a30c")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1903,10 +2010,40 @@
 		)
 	)
 	(junction
+		(at 77.47 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e63bc34-b81c-432d-96cc-440bf4caa869")
+	)
+	(junction
+		(at 119.38 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "14af8c55-8fb5-40d1-8783-9c036eb2c881")
+	)
+	(junction
+		(at 80.01 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23ab96d9-b9e3-4f3f-9128-1d6b55dc967d")
+	)
+	(junction
 		(at 139.7 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2404430e-c1f1-4733-916b-656a91ae014f")
+	)
+	(junction
+		(at 75.0991 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "263af394-8522-4b06-a2ed-776578e7421a")
+	)
+	(junction
+		(at 119.38 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bafeb20-96e9-43f7-a8db-32896c6cc215")
 	)
 	(junction
 		(at 154.94 92.71)
@@ -1915,16 +2052,502 @@
 		(uuid "399651d1-e2b1-4af9-ba9e-70b84f67407d")
 	)
 	(junction
+		(at 119.38 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "43f270d0-45d0-42d0-b1a4-a60ab9a5804a")
+	)
+	(junction
 		(at 144.78 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b2ef669-6246-4e7d-b307-86934e1ac30e")
 	)
 	(junction
+		(at 72.39 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b3dcb31-92c8-4ff9-99ba-5d3e701b4d35")
+	)
+	(junction
+		(at 74.93 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4db7fed6-6192-4826-912d-9ed27c59b471")
+	)
+	(junction
+		(at 121.92 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50423023-9190-4ff5-afee-054c6db1b527")
+	)
+	(junction
+		(at 72.39 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ebe52f7-3a64-4766-bbe9-6c1f67e79071")
+	)
+	(junction
+		(at 80.01 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74990384-4c64-4406-aa69-8ead51c36694")
+	)
+	(junction
+		(at 125.73 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "78af3b6f-4379-43ee-a3b9-5f0ecb01913c")
+	)
+	(junction
+		(at 116.84 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79c5fd15-2d92-4a86-9241-3b37d0fafd90")
+	)
+	(junction
+		(at 74.93 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7c1ada1e-a9b6-4baa-8030-41f6ae68e2ec")
+	)
+	(junction
+		(at 77.47 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "81fca470-80b1-4225-a1b8-2ab73d577025")
+	)
+	(junction
+		(at 116.84 57.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82367845-80ee-40e2-88f2-8b3ccc510bae")
+	)
+	(junction
+		(at 80.01 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "82d13315-751e-48da-bb0c-404b0706a424")
+	)
+	(junction
+		(at 121.92 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "888be622-287a-4bac-ae6b-4b49da8c9f03")
+	)
+	(junction
+		(at 74.93 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9247c22f-00e2-46fe-8d09-19690aedf071")
+	)
+	(junction
+		(at 80.01 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "94254d32-29c6-481e-9d95-45f5d186a8e7")
+	)
+	(junction
+		(at 74.93 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "98f6f1cc-2629-4862-a127-6838bf507b54")
+	)
+	(junction
+		(at 82.55 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9935586d-9aec-4984-a7b4-742e2d894a4c")
+	)
+	(junction
+		(at 82.55 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab3b6c39-5168-4481-93e2-ed87f45f7c8c")
+	)
+	(junction
+		(at 80.01 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ad22d0fa-345b-4558-ac10-84897a87551f")
+	)
+	(junction
+		(at 116.84 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9eb285c-7741-4a39-afa1-20c9e3d0701c")
+	)
+	(junction
+		(at 77.47 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc4ff900-a30e-4543-85b2-deb26bec515b")
+	)
+	(junction
+		(at 119.38 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bcd2d2c3-5cc2-4472-9612-34d7c2156c78")
+	)
+	(junction
+		(at 72.39 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cfb731ed-10bf-42e6-bd0e-95b8f6a59405")
+	)
+	(junction
+		(at 119.38 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d65e8654-ff3c-4a29-9a11-298f5b3b896c")
+	)
+	(junction
+		(at 80.01 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e344f341-524a-4f81-8e68-e9cb712cd8eb")
+	)
+	(junction
+		(at 77.47 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed1fdf11-066b-4a83-a38c-442c40a49a95")
+	)
+	(junction
+		(at 123.19 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edee60e2-bd98-4136-93ca-d1bc6814e489")
+	)
+	(junction
+		(at 121.92 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6d073c1-ce9e-47db-82ea-cd594eb4003e")
+	)
+	(junction
+		(at 82.55 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f8fc6228-eaab-4099-913b-d2917fbdc584")
+	)
+	(junction
 		(at 144.78 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9f015c1-b20e-463a-850c-b53418997c9d")
+	)
+	(junction
+		(at 119.3927 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa071cd3-5357-4be1-b97f-5ff2269f551f")
+	)
+	(junction
+		(at 77.47 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd1a4b7f-e44c-4c8a-977b-143d78f8016b")
+	)
+	(wire
+		(pts
+			(xy 121.92 82.55) (xy 115.57 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03211db7-cafd-471c-9996-61a2a05c6910")
+	)
+	(wire
+		(pts
+			(xy 69.85 90.17) (xy 80.01 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0395ae96-166c-4567-96d3-6b5dba7019f8")
+	)
+	(wire
+		(pts
+			(xy 121.92 62.23) (xy 115.57 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "041fe130-e848-4206-a945-f73d25209c64")
+	)
+	(wire
+		(pts
+			(xy 80.01 69.85) (xy 85.09 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d211452-923d-498a-a95f-e7c74f5df442")
+	)
+	(wire
+		(pts
+			(xy 69.85 69.85) (xy 80.01 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d2f1987-9298-427b-9597-1262954df02a")
+	)
+	(wire
+		(pts
+			(xy 74.93 80.01) (xy 85.09 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ed23f5d-73b0-42ca-b9c8-889378cdd373")
+	)
+	(wire
+		(pts
+			(xy 80.01 64.77) (xy 85.09 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1184c93c-4b29-450e-911a-de3836135a83")
+	)
+	(wire
+		(pts
+			(xy 77.47 72.39) (xy 85.09 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13a81c41-bb31-42e6-ad28-e4693c110f7f")
+	)
+	(wire
+		(pts
+			(xy 123.19 82.55) (xy 121.92 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fa8d103-c2d6-4b45-be0c-08a18ebdf580")
+	)
+	(wire
+		(pts
+			(xy 69.85 92.71) (xy 77.47 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2150b65a-f6a9-471f-b308-087ed9ff43dd")
+	)
+	(wire
+		(pts
+			(xy 116.84 67.31) (xy 115.57 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "283d393b-e85c-48ec-b1c0-07df640a3b8f")
+	)
+	(wire
+		(pts
+			(xy 77.47 92.71) (xy 85.09 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "286d12f0-8d50-458d-8e93-7e8db7b2caab")
+	)
+	(wire
+		(pts
+			(xy 69.85 87.63) (xy 82.55 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e7efeae-1a9b-474a-8f68-cf19f67db742")
+	)
+	(wire
+		(pts
+			(xy 121.92 72.39) (xy 115.57 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fbfac4a-5716-4ac4-b41f-4ae67e2a9e20")
+	)
+	(wire
+		(pts
+			(xy 119.38 74.93) (xy 115.57 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3073318c-0d8d-459a-8bb6-30bfcc92bcd5")
+	)
+	(wire
+		(pts
+			(xy 116.84 77.47) (xy 115.57 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "355f078d-33bb-4a98-b33e-12c3574d41b4")
+	)
+	(wire
+		(pts
+			(xy 69.85 57.15) (xy 72.39 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36f7b8f4-5ad6-46e4-b992-9ce790e981b2")
+	)
+	(wire
+		(pts
+			(xy 115.57 105.41) (xy 123.19 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d770c45-fb57-499a-b244-8057781378c8")
+	)
+	(wire
+		(pts
+			(xy 77.47 82.55) (xy 85.09 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d9f0b81-a5f0-4f1a-900c-5b271b945bf2")
+	)
+	(wire
+		(pts
+			(xy 119.38 85.09) (xy 115.57 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3db82950-b0e2-41db-b180-37d36548d998")
+	)
+	(wire
+		(pts
+			(xy 123.19 67.31) (xy 116.84 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "43c73038-2f01-4d66-8182-c6fa2d5ba904")
+	)
+	(wire
+		(pts
+			(xy 69.85 95.25) (xy 75.0991 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "443b4c3c-2f66-45fc-86bb-5e22c11e4549")
+	)
+	(wire
+		(pts
+			(xy 72.39 77.47) (xy 85.09 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "492503b7-dc01-448c-a255-a3fda8bd332b")
+	)
+	(wire
+		(pts
+			(xy 82.55 110.49) (xy 85.09 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49fd8cf6-cbd4-40a1-95be-f9bccc3394a4")
+	)
+	(wire
+		(pts
+			(xy 69.85 102.87) (xy 74.93 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c0a7833-6e16-4a0f-aa96-034a53e1eda9")
+	)
+	(wire
+		(pts
+			(xy 123.19 74.93) (xy 119.38 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5000a122-c4d6-4540-ab04-08d67b6d74e7")
+	)
+	(wire
+		(pts
+			(xy 69.85 107.95) (xy 80.01 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50426335-9f12-4931-aba8-9df6ee427256")
+	)
+	(wire
+		(pts
+			(xy 74.93 59.69) (xy 85.09 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a527870-3afa-4b9b-a069-3272015b92d4")
+	)
+	(wire
+		(pts
+			(xy 69.85 72.39) (xy 77.47 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e28770e-722c-4132-bd6a-5d3452c15979")
+	)
+	(wire
+		(pts
+			(xy 123.19 57.15) (xy 116.84 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6268edcb-b4f3-4434-8b0d-79768e1a45fe")
 	)
 	(wire
 		(pts
@@ -1938,6 +2561,186 @@
 	)
 	(wire
 		(pts
+			(xy 123.19 85.09) (xy 119.38 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d446dce-e9b9-4bda-ba67-0d7642f862d1")
+	)
+	(wire
+		(pts
+			(xy 69.85 80.01) (xy 74.93 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6edd6ab7-192c-42b2-ba45-d82b4700d6df")
+	)
+	(wire
+		(pts
+			(xy 69.85 82.55) (xy 77.47 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75018097-2613-4551-b4a1-dc12ed12b86f")
+	)
+	(wire
+		(pts
+			(xy 82.55 67.31) (xy 85.09 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76bafc51-cf6a-46e1-b04c-9c2974d08cf7")
+	)
+	(wire
+		(pts
+			(xy 75.0991 95.25) (xy 85.09 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77879e61-9cd9-4640-bc72-0cf0bbf4a253")
+	)
+	(wire
+		(pts
+			(xy 82.55 87.63) (xy 85.09 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79d6ae9d-b293-4e5f-9508-7ae4a53fdc7f")
+	)
+	(wire
+		(pts
+			(xy 69.85 67.31) (xy 82.55 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80a31595-859c-48a4-958f-3b999ec6101c")
+	)
+	(wire
+		(pts
+			(xy 72.39 57.15) (xy 85.09 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c5b5d42-fce9-4dfe-97f3-c95e34bd9ff0")
+	)
+	(wire
+		(pts
+			(xy 69.85 77.47) (xy 72.39 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "944715da-e6b5-4ea4-a99f-79bf0d98d760")
+	)
+	(wire
+		(pts
+			(xy 80.01 107.95) (xy 85.09 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b66ab49-0c50-4f1c-b49a-8b7f41ce1ba4")
+	)
+	(wire
+		(pts
+			(xy 80.01 90.17) (xy 85.09 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bc7fde9-047a-49b5-85a7-edae915eaec8")
+	)
+	(wire
+		(pts
+			(xy 119.38 80.01) (xy 115.57 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e151581-a3af-45a2-b021-fc40d55b68e0")
+	)
+	(wire
+		(pts
+			(xy 123.19 80.01) (xy 119.38 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a39cbd43-9ba8-4499-8ed1-1a07f463fd8a")
+	)
+	(wire
+		(pts
+			(xy 72.39 100.33) (xy 85.09 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5a24036-6865-4080-b43a-0d5e0b2b3fa9")
+	)
+	(wire
+		(pts
+			(xy 123.19 64.77) (xy 119.38 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7166348-f939-49b0-8a7f-34cdbe87c7d4")
+	)
+	(wire
+		(pts
+			(xy 119.3927 59.69) (xy 115.57 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a99fb1ac-2807-4be3-be06-9a55b6bfe3d4")
+	)
+	(wire
+		(pts
+			(xy 123.19 72.39) (xy 121.92 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aab4e6a1-6d71-4a17-a989-b216b039ffe7")
+	)
+	(wire
+		(pts
+			(xy 119.38 69.85) (xy 115.57 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b09198d7-dc93-4856-84be-5455128f2664")
+	)
+	(wire
+		(pts
 			(xy 144.78 100.33) (xy 154.94 100.33)
 		)
 		(stroke
@@ -1945,6 +2748,16 @@
 			(type default)
 		)
 		(uuid "ba33e43b-ce2d-4cef-baa6-35a27e1dcf38")
+	)
+	(wire
+		(pts
+			(xy 77.47 62.23) (xy 85.09 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbe28a72-9c15-418b-bfe5-80ab2d5c5ad6")
 	)
 	(wire
 		(pts
@@ -1958,6 +2771,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 59.69) (xy 74.93 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd059623-7274-4960-bcf4-bedf5705f047")
+	)
+	(wire
+		(pts
 			(xy 115.57 87.63) (xy 139.7 87.63)
 		)
 		(stroke
@@ -1965,6 +2788,96 @@
 			(type default)
 		)
 		(uuid "be1d532e-d935-40d6-988e-08acbf6bf577")
+	)
+	(wire
+		(pts
+			(xy 69.85 113.03) (xy 80.01 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c150b50b-e45d-4e2d-9e04-406cce3af031")
+	)
+	(wire
+		(pts
+			(xy 69.85 105.41) (xy 77.47 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1e2422d-66ae-4986-ad69-fd562123fe6f")
+	)
+	(wire
+		(pts
+			(xy 69.85 110.49) (xy 82.55 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4d2a90b-5d7c-4233-bc4a-e0b057556f1e")
+	)
+	(wire
+		(pts
+			(xy 115.57 107.95) (xy 125.73 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5b9d48a-316d-4d9c-81bc-9d0791e2279e")
+	)
+	(wire
+		(pts
+			(xy 123.19 69.85) (xy 119.38 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c625dcec-df60-413a-9575-b33f51591033")
+	)
+	(wire
+		(pts
+			(xy 69.85 64.77) (xy 80.01 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc7b2b42-11d5-48fe-b947-7e97895e6159")
+	)
+	(wire
+		(pts
+			(xy 123.19 62.23) (xy 121.92 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccd0bfed-b9ed-43b7-8faf-fd692cc18439")
+	)
+	(wire
+		(pts
+			(xy 69.85 100.33) (xy 72.39 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd1b7562-2cbb-4d19-b737-0260e6241a87")
+	)
+	(wire
+		(pts
+			(xy 69.85 97.79) (xy 85.09 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdbc8bf9-7dbb-4fd8-a081-1e319405c306")
 	)
 	(wire
 		(pts
@@ -1978,6 +2891,26 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 85.09) (xy 85.09 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d713bae5-0d3d-4c78-819a-301b445c0e82")
+	)
+	(wire
+		(pts
+			(xy 74.93 74.93) (xy 85.09 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9422a45-a40b-49fe-b351-9f8441bebcb5")
+	)
+	(wire
+		(pts
 			(xy 124.46 97.79) (xy 123.19 97.79)
 		)
 		(stroke
@@ -1986,8 +2919,128 @@
 		)
 		(uuid "dab9b3af-09df-4e3e-a095-54987e625806")
 	)
+	(wire
+		(pts
+			(xy 119.38 64.77) (xy 115.57 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde23ccf-ea12-46b6-851c-964349c664b0")
+	)
+	(wire
+		(pts
+			(xy 77.47 105.41) (xy 85.09 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de68713d-19a8-4fa4-945a-24a4528bfbac")
+	)
+	(wire
+		(pts
+			(xy 74.93 102.87) (xy 85.09 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e06be55f-16b2-4009-b7c6-857cb84dcb1f")
+	)
+	(wire
+		(pts
+			(xy 123.19 77.47) (xy 116.84 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaa00815-e569-4dc6-ae3b-dc9c3f9ba07e")
+	)
+	(wire
+		(pts
+			(xy 69.85 85.09) (xy 80.01 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb84c3d0-8722-4e8f-a4b1-8095ab0e3f07")
+	)
+	(wire
+		(pts
+			(xy 132.08 107.95) (xy 125.73 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edb2468d-4842-4939-808b-4e1041dc4045")
+	)
+	(wire
+		(pts
+			(xy 132.08 105.41) (xy 123.19 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f26171ea-a536-4a77-ae85-c7f76c2a20fe")
+	)
+	(wire
+		(pts
+			(xy 123.19 59.69) (xy 119.3927 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f68f3c35-ef41-4aed-b143-cf2bceda1f6a")
+	)
+	(wire
+		(pts
+			(xy 116.84 57.15) (xy 115.57 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7328068-9141-47cc-841d-30b791a7b552")
+	)
+	(wire
+		(pts
+			(xy 80.01 113.03) (xy 85.09 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8854dce-3775-48a5-8a08-b60acf1c9f38")
+	)
+	(wire
+		(pts
+			(xy 69.85 74.93) (xy 74.93 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9cfff6d-2a0e-42cc-88d4-e90eb61f518f")
+	)
+	(wire
+		(pts
+			(xy 69.85 62.23) (xy 77.47 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fffe93c6-6c0a-49e9-a1be-0a300a9ed779")
+	)
 	(label "OUT5"
-		(at 85.09 62.23 180)
+		(at 69.85 62.23 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2007,7 +3060,7 @@
 		(uuid "0159a4d7-a456-464c-a4b6-cd74ca88465f")
 	)
 	(label "OUT36"
-		(at 115.57 85.09 0)
+		(at 123.19 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2017,7 +3070,7 @@
 		(uuid "02b50113-0b4f-4cb3-b52a-f775b10b8657")
 	)
 	(label "OUT25"
-		(at 115.57 57.15 0)
+		(at 123.19 57.15 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2047,7 +3100,7 @@
 		(uuid "04fa124d-ea3c-434c-b496-f927af9415f3")
 	)
 	(label "OUT28"
-		(at 115.57 64.77 0)
+		(at 123.19 64.77 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2087,7 +3140,7 @@
 		(uuid "0ee81c64-745b-4fca-9265-57f2b32abab9")
 	)
 	(label "OUT19"
-		(at 85.09 100.33 180)
+		(at 69.85 100.33 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2097,7 +3150,7 @@
 		(uuid "1020be84-f831-47ac-8953-2aaed042aa87")
 	)
 	(label "OUT29"
-		(at 115.57 67.31 0)
+		(at 123.19 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2127,7 +3180,7 @@
 		(uuid "15cbf787-5819-4826-94d7-2c24b261cca3")
 	)
 	(label "OUT16"
-		(at 85.09 90.17 180)
+		(at 69.85 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2147,7 +3200,7 @@
 		(uuid "1bad93fc-894c-49c2-ba5f-81b3b85d4b43")
 	)
 	(label "OUT35"
-		(at 115.57 82.55 0)
+		(at 123.19 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2157,7 +3210,7 @@
 		(uuid "21061d57-a128-463a-a536-d3be0a00c6f4")
 	)
 	(label "OUT24"
-		(at 85.09 113.03 180)
+		(at 69.85 113.03 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2167,7 +3220,7 @@
 		(uuid "23685a21-2b31-4a72-aff8-8ef03e04f6f2")
 	)
 	(label "OUT20"
-		(at 85.09 102.87 180)
+		(at 69.85 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2197,7 +3250,7 @@
 		(uuid "26e0427a-f846-4b18-91eb-be9b991b8a72")
 	)
 	(label "OUT4"
-		(at 85.09 59.69 180)
+		(at 69.85 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2207,7 +3260,7 @@
 		(uuid "275a2b83-0c88-494e-aafc-06c5bcbfcec2")
 	)
 	(label "OUT3"
-		(at 85.09 57.15 180)
+		(at 69.85 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2217,7 +3270,7 @@
 		(uuid "2808d247-65de-4200-9609-b6ae1358e5b2")
 	)
 	(label "OUT7"
-		(at 85.09 67.31 180)
+		(at 69.85 67.31 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2227,7 +3280,7 @@
 		(uuid "2986875c-f1ed-4030-94d6-97281fd4a5ff")
 	)
 	(label "OUT27"
-		(at 115.57 62.23 0)
+		(at 123.19 62.23 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2267,7 +3320,7 @@
 		(uuid "46b49c3d-0d89-4a87-b507-5e99075baa71")
 	)
 	(label "OUT32"
-		(at 115.57 74.93 0)
+		(at 123.19 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2277,7 +3330,7 @@
 		(uuid "4b482444-dfa3-4148-89db-a03763112fcc")
 	)
 	(label "OUT2"
-		(at 115.57 107.95 0)
+		(at 132.08 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2297,7 +3350,7 @@
 		(uuid "54e20ccd-47dc-42ab-a859-3b59c328c581")
 	)
 	(label "OUT12"
-		(at 85.09 80.01 180)
+		(at 69.85 80.01 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2327,7 +3380,7 @@
 		(uuid "5da6dc6a-9254-4dff-aa04-32c323fc3de9")
 	)
 	(label "OUT30"
-		(at 115.57 69.85 0)
+		(at 123.19 69.85 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2337,7 +3390,7 @@
 		(uuid "62263c1c-2df8-4ba8-a859-50a19effc293")
 	)
 	(label "OUT22"
-		(at 85.09 107.95 180)
+		(at 69.85 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2347,7 +3400,7 @@
 		(uuid "688601c0-aaac-4525-a78d-167cfbb8836b")
 	)
 	(label "OUT18"
-		(at 85.09 95.25 180)
+		(at 69.85 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2357,7 +3410,7 @@
 		(uuid "6af78b51-3bea-43d8-b7dc-d7fdfaf5cfb3")
 	)
 	(label "OUT9"
-		(at 85.09 72.39 180)
+		(at 69.85 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2387,7 +3440,7 @@
 		(uuid "6e8a72e7-0db6-4da4-a256-2894d29ead00")
 	)
 	(label "OUT15"
-		(at 85.09 87.63 180)
+		(at 69.85 87.63 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2397,7 +3450,7 @@
 		(uuid "803d0b9f-88db-4517-a863-6972a08f036a")
 	)
 	(label "OUT10"
-		(at 85.09 74.93 180)
+		(at 69.85 74.93 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2407,7 +3460,7 @@
 		(uuid "85924d2d-3f8a-4b1e-a584-24d75e506362")
 	)
 	(label "OUT17"
-		(at 85.09 92.71 180)
+		(at 69.85 92.71 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2497,7 +3550,7 @@
 		(uuid "a87372ab-637d-4ba3-9f57-d36246a7aae2")
 	)
 	(label "OUT21"
-		(at 85.09 105.41 180)
+		(at 69.85 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2507,7 +3560,7 @@
 		(uuid "ab330fad-a7a4-4777-992c-fb58b2f2d37c")
 	)
 	(label "OUT6"
-		(at 85.09 64.77 180)
+		(at 69.85 64.77 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2517,7 +3570,7 @@
 		(uuid "ab434839-4850-4c7c-bedd-4ada05d75607")
 	)
 	(label "OUT34"
-		(at 115.57 80.01 0)
+		(at 123.19 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2537,7 +3590,7 @@
 		(uuid "b5dba855-0f32-434a-83fd-007ccd4b0f5d")
 	)
 	(label "OUT26"
-		(at 115.57 59.69 0)
+		(at 123.19 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2547,7 +3600,7 @@
 		(uuid "b65d22ac-78d1-4835-afb2-a98fbb5efdab")
 	)
 	(label "OUT1"
-		(at 115.57 105.41 0)
+		(at 132.08 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2567,7 +3620,7 @@
 		(uuid "b963fb2c-27ce-4500-9902-e5af472f957c")
 	)
 	(label "OUT11"
-		(at 85.09 77.47 180)
+		(at 69.85 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2577,7 +3630,7 @@
 		(uuid "bf2ef608-eb99-4366-acaf-c3aff985586a")
 	)
 	(label "OUT31"
-		(at 115.57 72.39 0)
+		(at 123.19 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2597,7 +3650,7 @@
 		(uuid "c3e27976-1bd0-47b2-919e-fdedc27ef791")
 	)
 	(label "OUT8"
-		(at 85.09 69.85 180)
+		(at 69.85 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2617,7 +3670,7 @@
 		(uuid "c7c6eab8-2f84-46e9-98eb-eadf23570783")
 	)
 	(label "OUT33"
-		(at 115.57 77.47 0)
+		(at 123.19 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2637,7 +3690,7 @@
 		(uuid "cc0c56c2-daa1-459c-a6e6-8ae13ad2bb7d")
 	)
 	(label "OUT13"
-		(at 85.09 82.55 180)
+		(at 69.85 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2677,7 +3730,7 @@
 		(uuid "e3f6f8c4-8e98-46b6-bac7-55f79ce1ea1b")
 	)
 	(label "OUT23"
-		(at 85.09 110.49 180)
+		(at 69.85 110.49 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2697,7 +3750,7 @@
 		(uuid "f6c08863-db50-4ebd-a714-dcfb77e6f04b")
 	)
 	(label "OUT14"
-		(at 85.09 85.09 180)
+		(at 69.85 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2738,6 +3791,140 @@
 			(justify left)
 		)
 		(uuid "d30b22af-7936-4e76-8c83-31830fd4cf15")
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 80.01 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "054617bf-754e-4e17-ac8b-cf6714976eb4")
+		(property "Reference" "G4"
+			(at 82.55 65.2779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 67.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 85.09 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 80.01 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "99262022-47e4-4cdf-9160-508d8a73e8a6")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 119.38 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "08729e05-5f33-4a6f-bc13-bb010685d6a8")
+		(property "Reference" "B9"
+			(at 121.92 65.2779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 120.65 67.564 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 119.38 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc0fdd66-01a1-4722-a9ec-78eb27785ca6")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B9")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -2801,6 +3988,73 @@
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
 					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 77.47 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0c795356-81c2-408c-9160-a7c0c60c4093")
+		(property "Reference" "B12"
+			(at 80.01 100.8379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 78.74 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 82.55 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 77.47 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d879c31e-9001-48ec-8c91-45addf1e2759")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B12")
 					(unit 1)
 				)
 			)
@@ -2874,6 +4128,140 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 77.47 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "11612287-9d0c-474e-aa9d-5e90f9f13f56")
+		(property "Reference" "RED2"
+			(at 80.01 77.9779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 78.74 80.264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 82.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 77.47 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d6cb1f3-c416-46bf-8b4b-32da0432f103")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 80.01 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "17b5ac58-ee1a-4d0e-a82b-71a2bca094ea")
+		(property "Reference" "RED1"
+			(at 78.74 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 87.884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 85.09 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 80.01 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f248383e-dea7-4b8e-ac3a-e29004018dd8")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
 		(at 231.14 162.56 0)
 		(unit 1)
@@ -2883,7 +4271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19aed1f2-d563-4854-92d1-da95ac2833f5")
-		(property "Reference" "D12"
+		(property "Reference" "D7"
 			(at 231.14 139.7 0)
 			(effects
 				(font
@@ -2941,7 +4329,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D12")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -2957,7 +4345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19e8c161-9d57-49e0-adca-21a04f399dac")
-		(property "Reference" "D8"
+		(property "Reference" "D11"
 			(at 231.14 44.45 0)
 			(effects
 				(font
@@ -3015,7 +4403,342 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D8")
+					(reference "D11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 74.93 102.87 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "22b5740f-d205-4770-855a-1f60525b0adc")
+		(property "Reference" "G12"
+			(at 77.47 98.2979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 76.2 100.584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 80.01 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 74.93 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01673825-7de4-491a-8f7b-496f1d23e43b")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 82.55 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28cba658-edd5-4c54-8a00-7e5c6826b2fb")
+		(property "Reference" "G11"
+			(at 85.09 105.9179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 83.82 108.204 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 87.63 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 82.55 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3969caee-4839-4482-b324-f28123fc2b59")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 119.38 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "28d26f0f-5d2c-465d-9603-554d0f585269")
+		(property "Reference" "B7"
+			(at 121.92 80.5179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "`"
+			(at 120.65 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 124.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 119.38 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ec6ba3d-a3de-4e62-9a67-ca99f0da1711")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 77.47 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d98d4ea-5b94-4395-8b51-73daf826cf1e")
+		(property "Reference" "G1"
+			(at 76.2 88.138 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 78.74 90.424 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 82.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 77.47 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "561ca635-be38-4a1d-933a-c6fb352e26a4")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 77.47 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "305abfde-3c9d-4f23-9620-7663cd64c3fe")
+		(property "Reference" "B4"
+			(at 80.01 67.8179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 78.74 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 82.55 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 77.47 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd4f1aaf-31d2-4de4-854c-31f5b2c7da0f")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B4")
 					(unit 1)
 				)
 			)
@@ -3023,7 +4746,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 85.09 97.79 270)
+		(at 69.85 97.79 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3032,7 +4755,7 @@
 		(fields_autoplaced yes)
 		(uuid "3129a060-c739-4580-bc6f-7458b53e28b3")
 		(property "Reference" "#PWR028"
-			(at 78.74 97.79 0)
+			(at 63.5 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3041,7 +4764,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 97.7899 90)
+			(at 66.04 97.7899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3050,7 +4773,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 97.79 0)
+			(at 69.85 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3059,7 +4782,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 97.79 0)
+			(at 69.85 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3068,7 +4791,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 97.79 0)
+			(at 69.85 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3338,6 +5061,207 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 125.73 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "413b60fc-1886-4baf-9e58-a2e40574f2ec")
+		(property "Reference" "G6"
+			(at 128.27 103.3779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 127 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 130.81 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 130.81 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 125.73 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4a37d3e3-f533-44be-bfeb-583ea9c34cee")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 74.93 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4493663d-c8e5-4cde-90de-8aba0a980af5")
+		(property "Reference" "B3"
+			(at 77.47 75.4379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 76.2 77.724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 80.01 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 74.93 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08122d88-b829-4dd7-b743-8af6c294af11")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 116.84 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4493fa4f-fd1d-458a-95cd-cd980a625c4e")
+		(property "Reference" "B8"
+			(at 119.38 72.8979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 118.11 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 121.92 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 116.84 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14256eb6-d873-487c-857a-c38f60fd2436")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
 		(at 200.66 90.17 0)
 		(unit 1)
@@ -3406,6 +5330,73 @@
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
 					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 82.55 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "527982fd-35ce-4502-b49b-dcdd7c22e707")
+		(property "Reference" "B2"
+			(at 85.09 83.0579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 83.82 85.344 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 87.63 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 82.55 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70e1de8c-68b5-4f04-a680-664e50a3d66e")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B2")
 					(unit 1)
 				)
 			)
@@ -3681,6 +5672,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 72.39 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e75a0b8-0bb8-4288-8925-41dc6e140d4a")
+		(property "Reference" "B6"
+			(at 74.93 52.5779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 73.66 54.864 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 77.47 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 72.39 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f0440221-d7dc-4156-bfcc-ebebc4e69d0f")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 115.57 90.17 90)
 		(unit 1)
@@ -3757,7 +5815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65ef5489-3cb6-4e33-965f-d1e2b8b39eb0")
-		(property "Reference" "D11"
+		(property "Reference" "D8"
 			(at 231.14 115.57 0)
 			(effects
 				(font
@@ -3815,7 +5873,208 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D11")
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 121.92 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6ef00a7c-11f7-4f52-bd33-0dec5567813b")
+		(property "Reference" "RED8"
+			(at 124.46 67.8179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 123.19 70.104 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 127 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 121.92 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46f6080b-7b1e-4526-b424-466d5a5d5ba9")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 74.93 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "701587dd-834f-444c-af85-6ac5cd05e105")
+		(property "Reference" "RED3"
+			(at 77.47 70.3579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 76.2 72.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 80.01 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 74.93 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1804557e-0e63-40d8-b1d5-3b4d31273080")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 123.19 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "703fd50c-182b-49f5-899a-4ec31e34804d")
+		(property "Reference" "RED6"
+			(at 125.73 100.8379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 124.46 103.124 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 128.27 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 128.27 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 123.19 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e1fd55a-3a55-48bd-8c46-9bd01237ed73")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED6")
 					(unit 1)
 				)
 			)
@@ -3958,6 +6217,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 80.01 85.09 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "74347ba5-b158-4eea-b1e9-90ebc2a1434d")
+		(property "Reference" "G2"
+			(at 82.55 80.5179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 82.804 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 85.09 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 80.01 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7caeba05-cdad-4ffe-95f7-bd414fcddfe7")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 151.13 83.82 0)
 		(unit 1)
@@ -4021,6 +6347,73 @@
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
 					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 82.55 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "800b0ca9-cbc5-4173-a460-039b6305c200")
+		(property "Reference" "RED4"
+			(at 85.09 62.7379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 83.82 65.024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 87.63 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 82.55 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da1b09d1-aa59-4292-8283-54dc84748c21")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED4")
 					(unit 1)
 				)
 			)
@@ -4244,7 +6637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8df63a1a-fa67-402b-b84e-2af850dd57dd")
-		(property "Reference" "D7"
+		(property "Reference" "D12"
 			(at 231.14 20.32 0)
 			(effects
 				(font
@@ -4302,7 +6695,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D7")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -4507,6 +6900,207 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 80.01 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9877dad8-7887-4956-881f-1c678aa594a8")
+		(property "Reference" "B11"
+			(at 82.55 108.4579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 110.744 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 85.09 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 80.01 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ebeeb1f-881f-436c-a33d-1598c96994fb")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 121.92 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "98f24d8f-815f-4aee-9c84-5d25f9cbe79e")
+		(property "Reference" "G7"
+			(at 124.46 77.9779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 123.19 80.264 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 127 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 121.92 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "798adc48-685d-4d20-acf6-d2839a595dd0")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 80.01 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "99926d33-2dab-41b3-8119-1340f2b5362c")
+		(property "Reference" "RED11"
+			(at 82.55 103.3779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 105.664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 85.09 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 80.01 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "683b22f8-6cba-4b0d-bd52-ed4d6b66f64d")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
 		(at 200.66 162.56 0)
 		(unit 1)
@@ -4590,7 +7184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ce6fc2b-c8b4-404f-ac23-c0c34ca42af6")
-		(property "Reference" "D9"
+		(property "Reference" "D10"
 			(at 231.14 67.31 0)
 			(effects
 				(font
@@ -4648,7 +7242,74 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D9")
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 80.01 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9efd6ae5-9196-44d9-b042-a6a89521310c")
+		(property "Reference" "B5"
+			(at 82.55 60.1979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 81.28 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 85.09 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 80.01 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34793755-e598-4b3b-98eb-2a2c51b1a587")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B5")
 					(unit 1)
 				)
 			)
@@ -4796,6 +7457,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 121.92 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a1e0db9a-87f8-4a93-bb6a-6ebdd78a8b7e")
+		(property "Reference" "B10"
+			(at 124.46 57.6579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 123.19 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 127 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 121.92 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5af40cff-679f-4b3b-ac1a-9e29d99c39f9")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 236.22 81.28 270)
 		(unit 1)
@@ -4863,6 +7591,274 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 116.84 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b16aec80-4eee-4782-955c-fc6688a05b75")
+		(property "Reference" "G9"
+			(at 119.38 62.7379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 118.11 65.024 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 121.92 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 116.84 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6e39afdd-094a-46af-8acb-5ae53a332673")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 75.0991 95.25 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b623dc46-1960-499f-b740-502a523c1f9f")
+		(property "Reference" "B1"
+			(at 73.914 90.678 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 76.3691 92.964 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 80.1791 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.1791 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 75.0991 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ee87ac23-9726-4240-8c88-9ea69c05655f")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "B1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 72.39 77.47 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7b92c6d-046e-419a-b946-8eb26548d322")
+		(property "Reference" "G3"
+			(at 74.93 72.8979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 73.66 75.184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 77.47 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 72.39 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b904773-3823-4259-964c-fce9e256f528")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 72.39 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6a66d04-cdcf-4898-ad59-1479c15a3aea")
+		(property "Reference" "RED12"
+			(at 74.93 95.7579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 73.66 98.044 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 77.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 72.39 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9ebd653-75cf-4ac8-ba33-cc22527ad2d2")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "XINGLIGHT XL-1615RGBC-YG:XL-1615RGBC-YG")
 		(at 231.14 114.3 0)
 		(unit 1)
@@ -4872,7 +7868,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca5ba07a-f3dd-4a98-b408-4d1b8e21a661")
-		(property "Reference" "D10"
+		(property "Reference" "D9"
 			(at 231.14 91.44 0)
 			(effects
 				(font
@@ -4930,7 +7926,74 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D10")
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 119.38 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca9f07ca-7ccf-4c22-9fb5-5f555bec5f6a")
+		(property "Reference" "RED7"
+			(at 121.92 75.4379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 120.65 77.724 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 124.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 119.38 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1cd91ad1-60d8-4c69-b3bd-a30150b58a13")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED7")
 					(unit 1)
 				)
 			)
@@ -5420,6 +8483,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 119.3927 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e9e728e5-7e19-4fd3-a1f6-5e2b31a14e65")
+		(property "Reference" "G10"
+			(at 121.9327 55.1179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 120.6627 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 124.4727 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.4727 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 119.3927 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ee10fc8-d7e6-4d04-ace2-5e1a6e7a1e45")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 115.57 95.25 90)
 		(unit 1)
@@ -5481,6 +8611,207 @@
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 119.38 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f41da19c-82f2-443a-af38-0fa28224cff8")
+		(property "Reference" "G8"
+			(at 121.92 70.3579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 120.65 72.644 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 119.38 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "455dafe8-2d46-421f-8c09-c057e7b82b89")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 119.38 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7f086f9-2b80-4826-b775-1c2a8445a818")
+		(property "Reference" "RED9"
+			(at 121.92 60.1979 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 120.65 62.484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 119.38 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4fbb7251-70ef-447f-99ea-e903fdb2d77f")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 116.84 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f8de1109-066b-48da-809c-232a0f089bd6")
+		(property "Reference" "RED10"
+			(at 119.38 52.5779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 118.11 54.864 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 121.92 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 121.92 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 116.84 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eabf6d71-7dfd-4f3e-acb3-893ac48cc5de")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED10")
 					(unit 1)
 				)
 			)
@@ -5551,6 +8882,140 @@
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 77.47 62.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f9da29c2-1e16-481d-8caa-5b7e5b9811eb")
+		(property "Reference" "G5"
+			(at 80.01 57.6579 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 78.74 59.944 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 82.55 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 77.47 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1de9e91-3bda-4d7b-9ce6-c24ee84cbe1b")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "G5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 74.93 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fcd31bff-e4cd-422c-86a2-5f07cbdf9140")
+		(property "Reference" "RED5"
+			(at 77.47 55.1179 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 76.2 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 80.01 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 80.01 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 74.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9dbaec13-20ea-4727-983f-2f9fbfee7f81")
+		)
+		(instances
+			(project "ProjectAurora"
+				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
+					(reference "RED5")
 					(unit 1)
 				)
 			)
