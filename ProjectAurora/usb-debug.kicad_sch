@@ -3521,7 +3521,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C3020560.pdf?spm=wm.sxq.inf.ggs___wm.ssy.bg.0.xh&lcsc_vid=RgNfBlVfE1ALVwYDQlhcVwZQFQVeUFUCEwQMVlIEFVExVlNRTlNfXlZRQFRcUDsOAxUeFF5JWBYZEEoKFBINSQcJGk4%3D"
 			(at 180.34 87.63 0)
 			(effects
 				(font
@@ -5017,7 +5017,7 @@
 				)
 			)
 		)
-		(property "Value" "10K"
+		(property "Value" "1K"
 			(at 137.16 105.41 90)
 			(effects
 				(font

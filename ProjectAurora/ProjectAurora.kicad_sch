@@ -3607,7 +3607,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://abracon.com/Resonators/ABS07.pdf"
 			(at 52.07 66.04 0)
 			(effects
 				(font

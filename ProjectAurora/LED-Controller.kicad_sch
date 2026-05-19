@@ -4271,7 +4271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19aed1f2-d563-4854-92d1-da95ac2833f5")
-		(property "Reference" "D7"
+		(property "Reference" "D6"
 			(at 231.14 139.7 0)
 			(effects
 				(font
@@ -4329,7 +4329,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D7")
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -4345,7 +4345,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "19e8c161-9d57-49e0-adca-21a04f399dac")
-		(property "Reference" "D11"
+		(property "Reference" "D10"
 			(at 231.14 44.45 0)
 			(effects
 				(font
@@ -4403,7 +4403,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D11")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -5271,7 +5271,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4aec5bd8-c0a9-4d05-969e-eccdc762fb3c")
-		(property "Reference" "D3"
+		(property "Reference" "D2"
 			(at 200.66 67.31 0)
 			(effects
 				(font
@@ -5329,7 +5329,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D3")
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -5815,7 +5815,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65ef5489-3cb6-4e33-965f-d1e2b8b39eb0")
-		(property "Reference" "D8"
+		(property "Reference" "D7"
 			(at 231.14 115.57 0)
 			(effects
 				(font
@@ -5873,7 +5873,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D8")
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -6563,7 +6563,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8bebe98e-7450-42d6-83de-fa3a2b9e3bb5")
-		(property "Reference" "D4"
+		(property "Reference" "D3"
 			(at 200.66 91.44 0)
 			(effects
 				(font
@@ -6621,7 +6621,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D4")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -6637,7 +6637,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8df63a1a-fa67-402b-b84e-2af850dd57dd")
-		(property "Reference" "D12"
+		(property "Reference" "D11"
 			(at 231.14 20.32 0)
 			(effects
 				(font
@@ -6695,7 +6695,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D12")
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -7110,7 +7110,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9bb367ff-181b-477e-b352-36045b1cea08")
-		(property "Reference" "D6"
+		(property "Reference" "D5"
 			(at 200.66 139.7 0)
 			(effects
 				(font
@@ -7168,7 +7168,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D6")
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -7184,7 +7184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9ce6fc2b-c8b4-404f-ac23-c0c34ca42af6")
-		(property "Reference" "D10"
+		(property "Reference" "D9"
 			(at 231.14 67.31 0)
 			(effects
 				(font
@@ -7242,7 +7242,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D10")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -7325,7 +7325,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fb1f4b7-5433-4143-b85f-81667ea68788")
-		(property "Reference" "D1"
+		(property "Reference" "D12"
 			(at 200.66 19.05 0)
 			(effects
 				(font
@@ -7383,7 +7383,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D1")
+					(reference "D12")
 					(unit 1)
 				)
 			)
@@ -7868,7 +7868,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca5ba07a-f3dd-4a98-b408-4d1b8e21a661")
-		(property "Reference" "D9"
+		(property "Reference" "D8"
 			(at 231.14 91.44 0)
 			(effects
 				(font
@@ -7926,7 +7926,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D9")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -8277,7 +8277,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3b385ad-08cd-4c1a-b490-d1fbf9b770aa")
-		(property "Reference" "D2"
+		(property "Reference" "D1"
 			(at 200.66 43.18 0)
 			(effects
 				(font
@@ -8335,7 +8335,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D2")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -8351,7 +8351,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e69d6c54-2dc9-454e-a9a9-e0bfe9de8458")
-		(property "Reference" "D5"
+		(property "Reference" "D4"
 			(at 200.66 115.57 0)
 			(effects
 				(font
@@ -8409,7 +8409,7 @@
 		(instances
 			(project "ProjectAurora"
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/48cdbbd7-34d6-4c6d-b523-5eee0bb171ae"
-					(reference "D5")
+					(reference "D4")
 					(unit 1)
 				)
 			)
