@@ -18,6 +18,8 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "is31fl3237_driver.h"
+#include "stm32u0xx_hal.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -47,6 +49,8 @@ RTC_HandleTypeDef hrtc;
 
 UART_HandleTypeDef huart1;
 
+IS31FL3237_HandleTypeDef is31fl;
+
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -57,6 +61,8 @@ static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_RTC_Init(void);
 static void MX_USART1_UART_Init(void);
+
+void IS31FL3237_Config();
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -100,6 +106,9 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
+  IS31FL3237_Config();
+  IS31FL3237_SetSoftwareShutdown(&is31fl, IS31FL3237_SOFTWARE_SHUTDOWN_ENABLED);
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -107,6 +116,13 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+    IS31FL3237_WriteRGBPWM(&is31fl, 0, 255, 0, 0);
+
+    HAL_Delay(500);
+
+    IS31FL3237_WriteRGBPWM(&is31fl, 0, 0, 0, 0);
+
+    HAL_Delay(500);
 
     /* USER CODE BEGIN 3 */
   }
@@ -348,6 +364,19 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void IS31FL3237_Config(){
+  is31fl.Init.I2C_Bus = &hi2c1;
+  is31fl.Init.Chip_Enable_Signal_Port = GPIOF;
+  is31fl.Init.Chip_Enable_Signal_Pin = GPIO_PIN_3;
+  is31fl.Init.I2C_Device_Address = IS31FL3237_I2C_AD_TO_GND;
+  is31fl.Init.I2C_Transmit_Timeout_Milliseconds = 10;
+  
+  is31fl.Init.RGB_Mode_Color_1 = IS31FL3237_RGB_CONFIG_RED;
+  is31fl.Init.RGB_Mode_Color_2 = IS31FL3237_RGB_CONFIG_GREEN;
+  is31fl.Init.RGB_Mode_Color_3 = IS31FL3237_RGB_CONFIG_BLUE;
+
+  IS31FL3237_Init(&is31fl);
+}
 
 /* USER CODE END 4 */
 
