@@ -4923,10 +4923,6 @@
 		)
 		(instances
 			(project "ProjectAurora"
-				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/158d1430-32d7-4a2e-a48f-d463032a7558"
-					(reference "L1")
-					(unit 1)
-				)
 				(path "/3ca855de-33e1-4742-b952-4e80ee0f08b6/179d2ac2-1c96-407e-ab01-437817cf932c"
 					(reference "L1")
 					(unit 1)

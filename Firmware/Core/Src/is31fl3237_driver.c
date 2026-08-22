@@ -1,154 +1,109 @@
-/*----------------------------------------------------------------
- * FILENAME :		is31fl3237_driver.c
- * PROJECT :		IS31FL3237_STM32_Driver
- * AUTHOR :			Johannes Berndorfer
- * BREIF :			Hardware abstraction layer for the IS31FL3237
- * 					IC on STM32 (ARM) hardware. (Source code)
- *
- * Copyright (C) 2019 Johannes Berndorfer.
- * ---------------------------------------------------------------
- * DATE CREATED :	28.04.2019
- * VERSION :		1.0
- * ---------------------------------------------------------------
- * DESCRIPTION :
- * 		This file contains the source code of the IS31FL3237
- * 		library for the STM32 platform.
- *
- * LICENSE :
- *		Copyright (C) 2019 Johannes Berndorfer
- *
- *		This program is free software: you can redistribute it and/or modify
- *		it under the terms of the GNU General Public License as published by
- *		the Free Software Foundation, either version 3 of the License, or
- *		(at your option) any later version.
- *
- *		This program is distributed in the hope that it will be useful,
- *		but WITHOUT ANY WARRANTY; without even the implied warranty of
- *		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *		GNU General Public License for more details.
- *
- *		You should have received a copy of the GNU General Public License
- *		along with this program. If not, see <https://www.gnu.org/licenses/>.
- *
- *--------------------------------------------------------------*/
+#include "is31fl3237_driver.h"
+#include "stm32u0xx_hal_gpio.h"
+#include "stm32u0xx_hal_i2c.h"
+#include <stdint.h>
+#include <string.h>
 
-#include <is31fl3237_driver.h>
+#define HIGH_BYTE_MASK 0xFF00
+#define LOW_BYTE_MASK 0x00FF
 
-static uint8_t __IS31FL3237_Select_Color(uint8_t color_selector, uint8_t r, uint8_t g, uint8_t b);
-
-/*
- * Initialises the given handle.
- */
-void IS31FL3237_Init(IS31FL3237_HandleTypeDef* handle)
-{
-	IS31FL3237_Reset(handle);
-	IS31FL3237_SetSoftwareShutdown(handle, IS31FL3237_SOFTWARE_SHUTDOWN_DISABLED);
-	IS31FL3237_SetChipEnable(handle, IS31FL3237_CHIP_ENABLED);
+void FL3237_Init(FL3237_HandleTypeDef *handle) {
+  // Set shutdown pin to output and set it high to enable the chip
+  HAL_GPIO_WritePin(handle->shutdown_port, handle->pin, GPIO_PIN_SET);
 }
 
-/*
- * Changes the chip enable state of the specified chip.
- */
-void IS31FL3237_SetChipEnable(IS31FL3237_HandleTypeDef* handle, uint8_t enable_state)
-{
-	HAL_GPIO_WritePin(handle->Init.Chip_Enable_Signal_Port, handle->Init.Chip_Enable_Signal_Pin, enable_state);
+void FL3237_SetControlRegister(FL3237_HandleTypeDef *handle,
+                               FL3237_ControlRegisterConfig crc) {
+  uint8_t command = 0x00 | (crc.osc << 4) | (crc.pms << 1) | (crc.ssd);
+  HAL_I2C_Mem_Write(handle->i2c_bus, handle->address, 0x00,
+                    I2C_MEMADD_SIZE_8BIT, &command, 1,
+                    handle->max_transmit_timeout_ms);
 }
 
-/*
- * Writes a given value to a given register.
- */
-void IS31FL3237_WriteRegister(IS31FL3237_HandleTypeDef* handle, uint8_t register_address, uint8_t value)
-{
-	uint8_t buf[2];
-	buf[0] = register_address;
-	buf[1] = value;
-	HAL_I2C_Master_Transmit(handle->Init.I2C_Bus, handle->Init.I2C_Device_Address, buf, 2, handle->Init.I2C_Transmit_Timeout_Milliseconds);
+void FL3237_SetHardwareChipEnable(FL3237_HandleTypeDef *handle,
+                                  GPIO_PinState state) {
+  HAL_GPIO_WritePin(handle->shutdown_port, handle->pin, state);
 }
 
-/*
- * Resets the specified chip. (Through I2C)
- */
-void IS31FL3237_Reset(IS31FL3237_HandleTypeDef* handle)
-{
-	IS31FL3237_WriteRegister(handle, IS31FL3237_REGISTER_RESET, 0x00);
+void FL3237_SetPWM(FL3237_HandleTypeDef *handle, uint8_t led_number,
+                   FL3237_RGB_LED pwm) {
+  // The FL3237 has 72 registers for RGB PWM values, starting at 0x01. Each
+  // LED has 6 registers (RL, RH, GL, GH, BL, BH), so the register for a given
+  // LED can be calculated as 0x01 + (led_number * 6). This code assumes using
+  // 8-bit PWM values, so the high byte for each color is set to 0x00.
+  uint8_t data[6] = {
+      (pwm.red & LOW_BYTE_MASK),   ((pwm.red & HIGH_BYTE_MASK) >> 8),
+      (pwm.green & LOW_BYTE_MASK), ((pwm.green & HIGH_BYTE_MASK) >> 8),
+      (pwm.blue & LOW_BYTE_MASK),  ((pwm.blue & HIGH_BYTE_MASK) >> 8)};
+
+  HAL_I2C_Mem_Write(handle->i2c_bus, handle->address, 0x01 + (led_number * 6),
+                    I2C_MEMADD_SIZE_8BIT, data, 6,
+                    handle->max_transmit_timeout_ms);
 }
 
-/*
- * Latches the written PWM and led control values in the chip to the led control circuit.
- */
-void IS31FL3237_Update(IS31FL3237_HandleTypeDef* handle)
-{
-	IS31FL3237_WriteRegister(handle, IS31FL3237_REGISTER_UPDATE, 0x00);
+FL3237_RGB_LED FL3237_GetPWM(FL3237_HandleTypeDef *handle, uint8_t led_number) {
+  uint8_t data[6];
+
+  HAL_I2C_Mem_Read(handle->i2c_bus, handle->address, 0x01 + (led_number * 6),
+                   I2C_MEMADD_SIZE_8BIT, data, 6,
+                   handle->max_transmit_timeout_ms);
+
+  FL3237_RGB_LED led;
+  led.red = data[0] | (data[1] << 8);
+  led.green = data[2] | (data[3] << 8);
+  led.blue = data[4] | (data[5] << 8);
+
+  return led;
 }
 
-/*
- * Sets the LED control for the specified chip / channel.
- */
-void IS31FL3237_WriteLEDControl(IS31FL3237_HandleTypeDef* handle, uint8_t channel, uint8_t led_current_setting, uint8_t led_state)
-{
-	if (channel < IS31FL3237_MAX_CHANNELS)
-		IS31FL3237_WriteRegister(handle, IS31FL3237_REGISTER_LED_CTRL + channel, (led_current_setting | led_state));
+void FL3237_UpdatePWM(FL3237_HandleTypeDef *handle) {
+  uint8_t command =
+      0x00; // Write 0x00 to Register 0x49 to update PWM for all registers.
+  HAL_I2C_Mem_Write(handle->i2c_bus, handle->address, 0x49,
+                    I2C_MEMADD_SIZE_8BIT, &command, 1,
+                    handle->max_transmit_timeout_ms);
 }
 
-/*
- * Writes an led control word to all channels of a specified chip.
- */
-void IS31FL3237_WriteGlobalLEDControl(IS31FL3237_HandleTypeDef* handle, uint8_t led_current_setting, uint8_t led_state)
-{
-	for (uint8_t i = 0; i < IS31FL3237_MAX_CHANNELS; i++)
-	{
-		IS31FL3237_WriteLEDControl(handle, i, led_current_setting, led_state);
-	}
+void FL3237_SetGlobalCurrent(FL3237_HandleTypeDef *handle, uint8_t gcc) {
+  HAL_I2C_Mem_Write(handle->i2c_bus, handle->address, 0x6E,
+                    I2C_MEMADD_SIZE_8BIT, &gcc, 1,
+                    handle->max_transmit_timeout_ms);
 }
 
-/*
- * Writes the given PWM value (0 - 255) to the specified chip / channel.
- */
-void IS31FL3237_WritePWM(IS31FL3237_HandleTypeDef* handle, uint8_t channel, uint8_t pwm_value)
-{
-	if (channel < IS31FL3237_MAX_CHANNELS)
-		IS31FL3237_WriteRegister(handle, IS31FL3237_REGISTER_PWM + channel, pwm_value);
+void FL3237_SetLEDScaling(FL3237_HandleTypeDef *handle, uint8_t led_number,
+                          FL3237_LED_SCALE scale) {
+  uint8_t data[] = {scale.red, scale.green, scale.blue};
+  HAL_I2C_Mem_Write(handle->i2c_bus, handle->address, 0x4A + (led_number * 3),
+                    I2C_MEMADD_SIZE_8BIT, data, 3,
+                    handle->max_transmit_timeout_ms);
 }
 
-/*
- * Writes a given color (r, g, b) to a specified rgb channel of the specified chip. The periodic order the individual leds
- * are connected can be set in the Init attribute of the handle struct. (RGB_Mode_Color_x)
- */
-void IS31FL3237_WriteRGBPWM(IS31FL3237_HandleTypeDef* handle, uint8_t rgb_channel, uint8_t red, uint8_t green, uint8_t blue)
-{
-	if (rgb_channel < IS31FL3237_MAX_RGB_CHANNELS)
-	{
-		IS31FL3237_WritePWM(handle, rgb_channel * 3, __IS31FL3237_Select_Color(handle->Init.RGB_Mode_Color_1, red, green, blue));
-		IS31FL3237_WritePWM(handle, (rgb_channel * 3) + 1, __IS31FL3237_Select_Color(handle->Init.RGB_Mode_Color_2, red, green, blue));
-		IS31FL3237_WritePWM(handle, (rgb_channel * 3) + 2, __IS31FL3237_Select_Color(handle->Init.RGB_Mode_Color_3, red, green, blue));
-	}
+FL3237_LED_SCALE FL3237_GetLEDScaling(FL3237_HandleTypeDef *handle,
+                                      uint8_t led_number) {
+  uint8_t data[3];
+  HAL_I2C_Mem_Read(handle->i2c_bus, handle->address, 0x4A + (led_number * 3),
+                   I2C_MEMADD_SIZE_8BIT, data, 3,
+                   handle->max_transmit_timeout_ms);
+
+  FL3237_LED_SCALE scale;
+  scale.red = data[0];
+  scale.green = data[1];
+  scale.blue = data[2];
+
+  return scale;
 }
 
-/*
- * Sets the software shutdown mode of the specified chip.
- */
-void IS31FL3237_SetSoftwareShutdown(IS31FL3237_HandleTypeDef* handle, uint8_t software_shutdown_mode)
-{
-	IS31FL3237_WriteRegister(handle, IS31FL3237_REGISTER_SHUTDOWN, software_shutdown_mode);
-}
+void FL3237_SetAllScaling(FL3237_HandleTypeDef *handle,
+                          FL3237_LED_SCALE scale) {
+  uint8_t data[36];
+  for (uint8_t i = 0; i < 12; i++) {
+    data[i * 3] = scale.red;
+    data[i * 3 + 1] = scale.green;
+    data[i * 3 + 2] = scale.blue;
+  }
 
-
-
-
-/*
- * Selects red, green or blue value by the given color selector.
- */
-static uint8_t __IS31FL3237_Select_Color(uint8_t color_selector, uint8_t r, uint8_t g, uint8_t b)
-{
-	switch (color_selector)
-	{
-	case IS31FL3237_RGB_CONFIG_RED:
-		return r;
-	case IS31FL3237_RGB_CONFIG_GREEN:
-		return g;
-	case IS31FL3237_RGB_CONFIG_BLUE:
-		return b;
-	default:
-		return 0;
-	}
+  // 4Ah is OUT1's scaling register; 36 consecutive registers cover OUT1..OUT36
+  HAL_I2C_Mem_Write(handle->i2c_bus, handle->address, 0x4A,
+                    I2C_MEMADD_SIZE_8BIT, data, 36,
+                    handle->max_transmit_timeout_ms);
 }

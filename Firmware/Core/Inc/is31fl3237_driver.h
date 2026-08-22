@@ -1,121 +1,99 @@
-/*----------------------------------------------------------------
- * FILENAME :		is31fl3237_driver.h
- * PROJECT :		IS31FL3237_STM32_Driver
- * AUTHOR :			Johannes Berndorfer
- * BREIF :			Hardware abstraction layer for the IS31FL3237
- * 					IC on STM32 (ARM) hardware.
+/**
+ * @file fl3237_driver.h
+ * @author Cooper Werner (cooperwerner824@gmail.com)
+ * @brief A Simple I2C driver for the FL3237 from Lumissil Systems
+ * @version 0.1
+ * @date 2026-08-22
  *
- * Copyright (C) 2019 Johannes Berndorfer.
- * ---------------------------------------------------------------
- * DATE CREATED :	28.04.2019
- * VERSION :		1.0
- * ---------------------------------------------------------------
- * DESCRIPTION :
- * 		Header file of the IS31FL3237_STM32_Driver library. This
- * 		file shall be included for use of the IS31FL3237 library
- * 		for the STM32.
- *
- * 		For more info and documentation of this library please
- * 		refer to the GitHub wiki at:
- * 			https://github.com/berndoJ/IS31FL3237_STM32_HAL_Driver/wiki
- *
- * LICENSE :
- *		Copyright (C) 2019 Johannes Berndorfer
- *
- *		This program is free software: you can redistribute it and/or modify
- *		it under the terms of the GNU General Public License as published by
- *		the Free Software Foundation, either version 3 of the License, or
- *		(at your option) any later version.
- *
- *		This program is distributed in the hope that it will be useful,
- *		but WITHOUT ANY WARRANTY; without even the implied warranty of
- *		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- *		GNU General Public License for more details.
- *
- *		You should have received a copy of the GNU General Public License
- *		along with this program. If not, see <https://www.gnu.org/licenses/>.
- *
- *--------------------------------------------------------------*/
+ * @copyright Copyright (c) 2026
+ */
 
-#ifndef _IS31FL3237_DRIVER_H_
-#define _IS31FL3237_DRIVER_H_
+#ifndef FL3237_DRIVER_H
+#define FL3237_DRIVER_H
 
-#ifdef __cplusplus
-extern "C"
-{
-#endif
+#include "stm32u031xx.h"
+#include "stm32u0xx_hal.h"
+#include "stm32u0xx_hal_gpio.h"
+#include "stm32u0xx_hal_i2c.h"
+#include <stdint.h>
 
-#include <stm32u0xx_hal.h> // Include ST's HAL library for the STM32. The correct library for the platform has to be chosen.
+#define FL3237_I2C_AD_TO_GND 0b01101000
+#define FL3237_I2C_AD_TO_VCC 0b01101110
+#define FL3237_I2C_AD_TO_SCL 0b01101010
+#define FL3237_I2C_AD_TO_SDA 0b01101100
 
-// Definitions of values for updating and changing settings of the IC. These values have been retrieved from the IS31FL3237's datasheet.
+#define FL3237_HARDWARE_CHIP_ENABLE GPIO_PIN_SET
+#define FL3237_HARDWARE_CHIP_DISABLE GPIO_PIN_RESET
 
-#define IS31FL3237_I2C_AD_TO_GND				0x00
-#define IS31FL3237_I2C_AD_TO_SCL				0x02
-#define IS31FL3237_I2C_AD_TO_SDA				0x04
-#define IS31FL3237_I2C_AD_TO_VCC				0x06
-#define IS31FL3237_GET_I2C_ADDR(AD_conn)		(0x78 | AD_conn) // Retrieves the I2C address of the IS31FL3237 chip by specifying the connection of the AD pin.
+typedef struct {
+  I2C_HandleTypeDef *i2c_bus;
+  GPIO_TypeDef *shutdown_port;
+  uint16_t pin;
+  uint8_t address;
+  uint32_t max_transmit_timeout_ms;
+} FL3237_HandleTypeDef;
 
-#define IS31FL3237_MAX_CHANNELS					36 // The IS31FL3237 chip has 36 controllable PWM channels.
-#define IS31FL3237_MAX_RGB_CHANNELS				(IS31FL3237_MAX_CHANNELS / 3) // Maximum amount of RGB channels for RGB channel mode.
+#define FL3237_SSD_SHUTDOWN 0x00
+#define FL3237_SSD_CHIP_ENABLE 0x01
 
-#define IS31FL3237_REGISTER_SHUTDOWN			0x00 // Shutdown register: The LSBit of this register determine-s if the chip is in shutdown. Write 0x00 for shutdown, 0x01 for normal operation.
-#define IS31FL3237_REGISTER_PWM					0x01 // Add the PWM channel index (range from 0 to 35) to IS31FL3237_REGISTER_PWM to address different channels; Write pwm value for channel in this register.
-#define IS31FL3237_REGISTER_LED_CTRL			0x26 // LED control register: LED control state (on or off) and maximum current setting. Refer to datasheet for detailed information.
-#define IS31FL3237_REGISTER_UPDATE				0x25 // Update register: Write 0x00 to this register to update PWM and LED control values.
-#define IS31FL3237_REGISTER_GLOBAL_CTRL			0x4a // Global control register: The LSBit of this register sets all led states: 0 on, 1 off.
-#define IS31FL3237_REGISTER_RESET				0x4f // Reset register: Write 0x00 to reset all registers of the chip.
+#define FL3237_PMS_8_BIT 0
+#define FL3237_PMS_10_BIT 1
+#define FL3237_PMS_12_BIT 2
+#define FL3237_PMS_16_BIT 3
 
-#define IS31FL3237_LED_CURRENT_MAX				0x00 // LED current is set to maximum current specified by external resistor. (refer to datasheet) [RESET DEFAULT]
-#define IS31FL3237_LED_CURRENT_MAX_DIV_2		0x02 // LED current is set to maximum current specified by external resistor divided by 2. (refer to datasheet)
-#define IS31FL3237_LED_CURRENT_MAX_DIV_3		0x04 // LED current is set to maximum current specified by external resistor divided by 3. (refer to datasheet)
-#define IS31FL3237_LED_CURRENT_MAX_DIV_4		0x06 // LED current is set to maximum current specified by external resistor divided by 4. (refer to datasheet)
+#define FL3237_OSC_16_MHZ 0
+#define FL3237_OSC_8_MHZ 1
+#define FL3237_OSC_1_MHZ 2
+#define FL3237_OSC_500_KHZ 3
+#define FL3237_OSC_250_KHZ 4
+#define FL3237_OSC_125_KHZ 5
+#define FL3237_OSC_62_KHZ 6
+#define FL3237_OSC_31_KHZ 7
 
-#define IS31FL3237_LED_STATE_OFF				0x00 // LED is off. [RESET DEFAULT]
-#define IS31FL3237_LED_STATE_ON					0x01 // LED is controlled by PWM registers.
+typedef struct {
+  // Software Shutdown either FL3237_SSD_SHUTDOWN or FL3237_SSD_CHIP_ENABLE
+  uint8_t ssd;
+  // PWM Resolution
+  uint8_t pms;
+  // Oscillator Clock Frequency
+  uint8_t osc;
+} FL3237_ControlRegisterConfig;
 
-#define IS31FL3237_SOFTWARE_SHUTDOWN_ENABLED	0x00 // Chip software shutdown mode enabled. [RESET DEFAULT]
-#define IS31FL3237_SOFTWARE_SHUTDOWN_DISABLED	0x01 // Chip software shutdown mode disabled.
+typedef struct {
+  uint16_t red;
+  uint16_t green;
+  uint16_t blue;
+} FL3237_RGB_LED;
 
-#define IS31FL3237_RGB_CONFIG_RED				0x00 // RGB mode color red.
-#define IS31FL3237_RGB_CONFIG_GREEN				0x01 // RGB mode color green.
-#define IS31FL3237_RGB_CONFIG_BLUE				0x02 // RGB mode color blue.
+typedef struct {
+  uint8_t red;
+  uint8_t green;
+  uint8_t blue;
+} FL3237_LED_SCALE;
 
-#define IS31FL3237_CHIP_DISABLED				GPIO_PIN_RESET // Chip disabled state.
-#define IS31FL3237_CHIP_ENABLED					GPIO_PIN_SET // Chip enabled state.
+void FL3237_Init(FL3237_HandleTypeDef *handle);
 
-// Initialisation struct typedef.
-typedef struct
-{
-	I2C_HandleTypeDef* I2C_Bus;
-	uint8_t I2C_Device_Address;
-	uint32_t I2C_Transmit_Timeout_Milliseconds;
-	GPIO_TypeDef* Chip_Enable_Signal_Port;
-	uint16_t Chip_Enable_Signal_Pin;
-	uint8_t RGB_Mode_Color_1;
-	uint8_t RGB_Mode_Color_2;
-	uint8_t RGB_Mode_Color_3;
-} IS31FL3237_InitTypeDef;
+void FL3237_SetControlRegister(FL3237_HandleTypeDef *handle,
+                               FL3237_ControlRegisterConfig crc);
 
-// Device-handle struct typedef.
-typedef struct
-{
-	IS31FL3237_InitTypeDef Init;
-} IS31FL3237_HandleTypeDef;
+void FL3237_SetHardwareChipEnable(FL3237_HandleTypeDef *handle,
+                                  GPIO_PinState state);
 
-void IS31FL3237_Init(IS31FL3237_HandleTypeDef* handle);
-void IS31FL3237_SetChipEnable(IS31FL3237_HandleTypeDef* handle, uint8_t enable_state);
-void IS31FL3237_WriteRegister(IS31FL3237_HandleTypeDef* handle, uint8_t register_address, uint8_t value);
-void IS31FL3237_Reset(IS31FL3237_HandleTypeDef* handle);
-void IS31FL3237_Update(IS31FL3237_HandleTypeDef* handle);
+void FL3237_SetPWM(FL3237_HandleTypeDef *handle, uint8_t led_number,
+                   FL3237_RGB_LED pwm);
 
-void IS31FL3237_WriteLEDControl(IS31FL3237_HandleTypeDef* handle, uint8_t channel, uint8_t led_current_setting, uint8_t led_state);
-void IS31FL3237_WriteGlobalLEDControl(IS31FL3237_HandleTypeDef* handle, uint8_t led_current_setting, uint8_t led_state);
-void IS31FL3237_WritePWM(IS31FL3237_HandleTypeDef* handle, uint8_t channel, uint8_t pwm_value);
-void IS31FL3237_WriteRGBPWM(IS31FL3237_HandleTypeDef* handle, uint8_t rgb_channel, uint8_t red, uint8_t green, uint8_t blue);
-void IS31FL3237_SetSoftwareShutdown(IS31FL3237_HandleTypeDef* handle, uint8_t software_shutdown_mode);
+FL3237_RGB_LED FL3237_GetPWM(FL3237_HandleTypeDef *handle, uint8_t led_number);
 
-#ifdef __cplusplus
-}
-#endif
+void FL3237_UpdatePWM(FL3237_HandleTypeDef *handle);
 
-#endif /* _IS31FL3237_DRIVER_H_ */
+void FL3237_SetGlobalCurrent(FL3237_HandleTypeDef *handle, uint8_t gcc);
+
+void FL3237_SetLEDScaling(FL3237_HandleTypeDef *handle, uint8_t led_number,
+                          FL3237_LED_SCALE scale);
+
+FL3237_LED_SCALE FL3237_GetLEDScaling(FL3237_HandleTypeDef *handle,
+                                      uint8_t led_number);
+
+void FL3237_SetAllScaling(FL3237_HandleTypeDef *handle, FL3237_LED_SCALE scale);
+
+#endif /* FL3237_DRIVER_H */
