@@ -26,6 +26,7 @@ set(MX_Application_Src
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/syscalls.c
     ${CMAKE_CURRENT_SOURCE_DIR}/../../startup_stm32u031xx.s
     ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/is31fl3237_driver.c
+    ${CMAKE_CURRENT_SOURCE_DIR}/../../Core/Src/tmp1075_driver.c
 )
 
 # STM32 HAL/LL Drivers

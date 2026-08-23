@@ -20,6 +20,7 @@
 #include "main.h"
 #include "is31fl3237_driver.h"
 #include "stm32u0xx_hal.h"
+#include "tmp1075_driver.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -54,6 +55,8 @@ UART_HandleTypeDef huart1;
 FL3237_HandleTypeDef fl3237_handle;
 FL3237_ControlRegisterConfig fl3237_cr;
 
+TMP1075_HandleTypeDef tmp1075_handle;
+
 uint8_t increasing;
 FL3237_RGB_LED led_state = {.red = 255, .green = 255, .blue = 255};
 
@@ -69,6 +72,7 @@ static void MX_RTC_Init(void);
 static void MX_USART1_UART_Init(void);
 
 void FL3237_Config();
+void TMP1075_Config();
 void update_led_state();
 /* USER CODE BEGIN PFP */
 
@@ -114,12 +118,9 @@ int main(void) {
   /* USER CODE BEGIN 2 */
 
   FL3237_Config();
+  TMP1075_Config();
 
-  fl3237_cr.ssd = FL3237_SSD_CHIP_ENABLE;
-  fl3237_cr.pms = FL3237_PMS_8_BIT;
-  fl3237_cr.osc = FL3237_OSC_62_KHZ;
-  FL3237_SetControlRegister(&fl3237_handle, fl3237_cr);
-  FL3237_SetHardwareChipEnable(&fl3237_handle, FL3237_HARDWARE_CHIP_ENABLE);
+  FL3237_SetHardwareChipEnable(&fl3237_handle, FL3237_HARDWARE_CHIP_DISABLE);
 
   /* USER CODE END 2 */
   int led_number = 0;
@@ -128,24 +129,26 @@ int main(void) {
   /* USER CODE BEGIN WHILE */
   while (1) {
 
-    FL3237_SetPWM(&fl3237_handle, led_number,
-                  (FL3237_RGB_LED){.red = 0, .green = 0, .blue = 0});
+    int16_t temperature = TMP1075_OneShot(&tmp1075_handle);
 
-    led_number = (led_number + 1) % 12;
+    // FL3237_SetPWM(&fl3237_handle, led_number,
+    //               (FL3237_RGB_LED){.red = 0, .green = 0, .blue = 0});
 
-    update_led_state();
+    // led_number = (led_number + 1) % 12;
 
-    FL3237_SetPWM(&fl3237_handle, led_number, led_state);
+    // update_led_state();
 
-    FL3237_UpdatePWM(&fl3237_handle);
+    // FL3237_SetPWM(&fl3237_handle, led_number, led_state);
 
-    HAL_Delay(50); // 20UPS
+    // FL3237_UpdatePWM(&fl3237_handle);
+
+    // HAL_Delay(50); // 20UPS
   }
   /* USER CODE END 3 */
 }
 
 void update_led_state() {
-  if (led_state.red == 0 && led_state.green == 0 && led_state.red == 0) {
+  if (led_state.red == 0 && led_state.green == 0 && led_state.blue == 0) {
     increasing = 1;
   }
 
@@ -184,6 +187,14 @@ void update_led_state() {
       return;
     }
   }
+}
+
+void TMP1075_Config() {
+  tmp1075_handle.i2c_bus = &hi2c1;
+  tmp1075_handle.address = 0b10010000; // A0 = A1 = A2 = 0 -> Addr = 0b10010000
+  tmp1075_handle.timeout_ms = 100;
+
+  TMP1075_Init(&tmp1075_handle);
 }
 
 /**
@@ -418,6 +429,11 @@ void FL3237_Config() {
   FL3237_SetAllScaling(
       &fl3237_handle,
       (FL3237_LED_SCALE){.red = 0xFF, .blue = 0xFF, .green = 0xFF});
+
+  fl3237_cr.ssd = FL3237_SSD_CHIP_ENABLE;
+  fl3237_cr.pms = FL3237_PMS_8_BIT;
+  fl3237_cr.osc = FL3237_OSC_62_KHZ;
+  FL3237_SetControlRegister(&fl3237_handle, fl3237_cr);
 }
 
 /* USER CODE END 4 */
