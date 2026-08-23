@@ -3,7 +3,9 @@
 #include "stm32u0xx_hal_rtc.h"
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include <sys/_types.h>
 
 #define NUM_LEDS 12
 
@@ -34,10 +36,10 @@ void TIMEKEEPING_TimeToLedPwm(RTC_TimeTypeDef *time, FL3237_RGB_LED *led_pwms) {
   // For example: 17:01 will display as 17:00, 17:04 -> 17:00, 17:05 -> 17:05,
   // 17:06 -> 17:05,
 
-  for (uint8_t i = 0; i < NUM_LEDS; 12) {
-    led_pwms->red = 0;
-    led_pwms->green = 0;
-    led_pwms->blue = 0;
+  for (uint8_t i = 0; i < NUM_LEDS; i++) {
+    led_pwms[i].red = 0;
+    led_pwms[i].green = 0;
+    led_pwms[i].blue = 0;
   }
 
   uint8_t led = position_to_led_number[time->Hours];
@@ -61,9 +63,23 @@ void TIMEKEEPING_SetRTCFromString(RTC_HandleTypeDef *hrtc, char *str,
                                   uint8_t len) {
   RTC_TimeTypeDef time;
 
-  // The string we will get from the host computer will be a string with 12-hour
-  // time with each hand seperated by the ":"
-  sscanf(str, "%d:%d:%d", &(time.Hours), &(time.Minutes), &(time.Seconds));
+  char *hour;
+  char *minute;
+  char *second = (char *)(((intptr_t)strrchr(str, ':')) + 1);
+  unsigned long temp;
+
+  hour = strtok(str, ":");
+  minute = strtok(NULL, ":");
+
+  temp = strtoul(hour, NULL, 10);
+  temp = temp % 12; // Convert to 12-Hour Time
+  time.Hours = (uint8_t)temp;
+
+  temp = strtoul(minute, NULL, 10);
+  time.Minutes = (uint8_t)temp;
+
+  temp = strtoul(second, NULL, 10);
+  time.Seconds = (uint8_t)temp;
 
   HAL_RTC_SetTime(hrtc, &time, RTC_FORMAT_BIN);
 }

@@ -20,6 +20,7 @@
 #include "main.h"
 #include "is31fl3237_driver.h"
 #include "stm32u0xx_hal.h"
+#include "timekeeping.h"
 #include "tmp1075_driver.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -57,9 +58,7 @@ FL3237_ControlRegisterConfig fl3237_cr;
 
 TMP1075_HandleTypeDef tmp1075_handle;
 
-uint8_t increasing;
-FL3237_RGB_LED led_state = {.red = 255, .green = 255, .blue = 255};
-
+uint8_t time_str[9];
 
 /* USER CODE BEGIN PV */
 
@@ -73,8 +72,6 @@ static void MX_RTC_Init(void);
 static void MX_USART1_UART_Init(void);
 
 void FL3237_Config();
-void TMP1075_Config();
-void update_led_state();
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -119,83 +116,35 @@ int main(void) {
   /* USER CODE BEGIN 2 */
 
   FL3237_Config();
-  TMP1075_Config();
 
   FL3237_SetHardwareChipEnable(&fl3237_handle, FL3237_HARDWARE_CHIP_ENABLE);
 
   /* USER CODE END 2 */
-  int led_number = 0;
 
+  // First we want to get the time from the user, for the demo, this can block
+  // indefinitely
+  HAL_UART_Transmit(&huart1, "Watch Ready", 11, UINT32_MAX);
+  HAL_UART_Receive(&huart1, time_str, 8, UINT32_MAX);
+  time_str[8] = 0; // Null terminator
+
+  // One we get that time string, we set the RTC with the time
+  TIMEKEEPING_SetRTCFromString(&hrtc, time_str, 8);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  RTC_TimeTypeDef current_time;
+  FL3237_RGB_LED watch_face[12];
   while (1) {
+    HAL_RTC_GetTime(&hrtc, &current_time, RTC_FORMAT_BIN);
 
-    // int16_t temperature = TMP1075_OneShot(&tmp1075_handle);
+    TIMEKEEPING_TimeToLedPwm(&current_time, watch_face);
 
-    FL3237_SetPWM(&fl3237_handle, led_number,
-                  (FL3237_RGB_LED){.red = 0, .green = 0, .blue = 0});
-
-    led_number = (led_number + 1) % 12;
-
-    update_led_state();
-
-    FL3237_SetPWM(&fl3237_handle, led_number, led_state);
+    FL3237_BulkSetPWM(&fl3237_handle, 0, watch_face, 12);
 
     FL3237_UpdatePWM(&fl3237_handle);
 
-    HAL_Delay(50); // 20UPS
+    HAL_Delay(5000);
   }
   /* USER CODE END 3 */
-}
-
-void update_led_state() {
-  if (led_state.red == 0 && led_state.green == 0 && led_state.blue == 0) {
-    increasing = 1;
-  }
-
-  if (led_state.red == 255 && led_state.green == 255 && led_state.blue == 255) {
-    increasing = 0;
-  }
-
-  if (increasing) {
-    if (led_state.red < 255) {
-      led_state.red += PWM_INCREMENT;
-      return;
-    }
-    
-    if (led_state.green < 255) {
-      led_state.green += PWM_INCREMENT;
-      return;
-    }
-
-    if (led_state.blue < 255) {
-      led_state.blue += PWM_INCREMENT;
-      return;
-    }
-  } else {
-    if (led_state.red > 0) {
-      led_state.red -= PWM_INCREMENT;
-      return;
-    }
-
-    if (led_state.green > 0) {
-      led_state.green -= PWM_INCREMENT;
-      return;
-    }
-
-    if (led_state.blue > 0) {
-      led_state.blue -= PWM_INCREMENT;
-      return;
-    }
-  }
-}
-
-void TMP1075_Config() {
-  tmp1075_handle.i2c_bus = &hi2c1;
-  tmp1075_handle.address = 0b10010000; // A0 = A1 = A2 = 0 -> Addr = 0b10010000
-  tmp1075_handle.timeout_ms = 100;
-
-  TMP1075_Init(&tmp1075_handle);
 }
 
 /**
@@ -262,7 +211,7 @@ static void MX_I2C1_Init(void) {
 
   /* USER CODE END I2C1_Init 1 */
   hi2c1.Instance = I2C1;
-  hi2c1.Init.Timing = 0x20303E5D;
+  hi2c1.Init.Timing = 0x2010091A;
   hi2c1.Init.OwnAddress1 = 0;
   hi2c1.Init.AddressingMode = I2C_ADDRESSINGMODE_7BIT;
   hi2c1.Init.DualAddressMode = I2C_DUALADDRESS_DISABLE;
