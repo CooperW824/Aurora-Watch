@@ -82,6 +82,9 @@ void FL3237_SetHardwareChipEnable(FL3237_HandleTypeDef *handle,
 void FL3237_SetPWM(FL3237_HandleTypeDef *handle, uint8_t led_number,
                    FL3237_RGB_LED pwm);
 
+void FL3237_BulkSetPWM(FL3237_HandleTypeDef *handle, uint8_t start_led,
+                       FL3237_RGB_LED *pwms, uint8_t len);
+
 FL3237_RGB_LED FL3237_GetPWM(FL3237_HandleTypeDef *handle, uint8_t led_number);
 
 void FL3237_UpdatePWM(FL3237_HandleTypeDef *handle);

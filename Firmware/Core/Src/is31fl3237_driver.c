@@ -41,6 +41,23 @@ void FL3237_SetPWM(FL3237_HandleTypeDef *handle, uint8_t led_number,
                     handle->max_transmit_timeout_ms);
 }
 
+void FL3237_BulkSetPWM(FL3237_HandleTypeDef *handle, uint8_t start_led,
+                       FL3237_RGB_LED *pwms, uint8_t len) {
+  uint8_t data[12 * 6];
+  for (uint8_t i = 0; i < len; i++) {
+    data[(6 * i)] = pwms[i].red & LOW_BYTE_MASK;
+    data[(6 * i) + 1] = (pwms[i].red & HIGH_BYTE_MASK) >> 8;
+    data[(6 * i) + 2] = pwms[i].green & LOW_BYTE_MASK;
+    data[(6 * i) + 3] = (pwms[i].green & HIGH_BYTE_MASK) >> 8;
+    data[(6 * i) + 4] = pwms[i].blue & LOW_BYTE_MASK;
+    data[(6 * i) + 5] = (pwms[i].blue & HIGH_BYTE_MASK) >> 8;
+  }
+
+  HAL_I2C_Mem_Write(handle->i2c_bus, handle->address, 0x01 + (start_led * 6),
+                    I2C_MEMADD_SIZE_8BIT, data, len * 6,
+                    handle->max_transmit_timeout_ms);
+}
+
 FL3237_RGB_LED FL3237_GetPWM(FL3237_HandleTypeDef *handle, uint8_t led_number) {
   uint8_t data[6];
 

@@ -60,6 +60,7 @@ TMP1075_HandleTypeDef tmp1075_handle;
 uint8_t increasing;
 FL3237_RGB_LED led_state = {.red = 255, .green = 255, .blue = 255};
 
+
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -120,7 +121,7 @@ int main(void) {
   FL3237_Config();
   TMP1075_Config();
 
-  FL3237_SetHardwareChipEnable(&fl3237_handle, FL3237_HARDWARE_CHIP_DISABLE);
+  FL3237_SetHardwareChipEnable(&fl3237_handle, FL3237_HARDWARE_CHIP_ENABLE);
 
   /* USER CODE END 2 */
   int led_number = 0;
@@ -129,20 +130,20 @@ int main(void) {
   /* USER CODE BEGIN WHILE */
   while (1) {
 
-    int16_t temperature = TMP1075_OneShot(&tmp1075_handle);
+    // int16_t temperature = TMP1075_OneShot(&tmp1075_handle);
 
-    // FL3237_SetPWM(&fl3237_handle, led_number,
-    //               (FL3237_RGB_LED){.red = 0, .green = 0, .blue = 0});
+    FL3237_SetPWM(&fl3237_handle, led_number,
+                  (FL3237_RGB_LED){.red = 0, .green = 0, .blue = 0});
 
-    // led_number = (led_number + 1) % 12;
+    led_number = (led_number + 1) % 12;
 
-    // update_led_state();
+    update_led_state();
 
-    // FL3237_SetPWM(&fl3237_handle, led_number, led_state);
+    FL3237_SetPWM(&fl3237_handle, led_number, led_state);
 
-    // FL3237_UpdatePWM(&fl3237_handle);
+    FL3237_UpdatePWM(&fl3237_handle);
 
-    // HAL_Delay(50); // 20UPS
+    HAL_Delay(50); // 20UPS
   }
   /* USER CODE END 3 */
 }
@@ -161,7 +162,7 @@ void update_led_state() {
       led_state.red += PWM_INCREMENT;
       return;
     }
-
+    
     if (led_state.green < 255) {
       led_state.green += PWM_INCREMENT;
       return;
