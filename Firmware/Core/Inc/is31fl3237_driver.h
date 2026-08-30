@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2026
  */
 
-#ifndef FL3237_DRIVER_H
-#define FL3237_DRIVER_H
+#ifndef IS31FL3237_DRIVER
+#define IS31FL3237_DRIVER
 
 #include "stm32u031xx.h"
 #include "stm32u0xx_hal.h"
@@ -28,7 +28,7 @@
 typedef struct {
   I2C_HandleTypeDef *i2c_bus;
   GPIO_TypeDef *shutdown_port;
-  uint16_t pin;
+  uint16_t shutdown_pin;
   uint8_t address;
   uint32_t max_transmit_timeout_ms;
 } FL3237_HandleTypeDef;
@@ -99,4 +99,4 @@ FL3237_LED_SCALE FL3237_GetLEDScaling(FL3237_HandleTypeDef *handle,
 
 void FL3237_SetAllScaling(FL3237_HandleTypeDef *handle, FL3237_LED_SCALE scale);
 
-#endif /* FL3237_DRIVER_H */
+#endif /* IS31FL3237_DRIVER */

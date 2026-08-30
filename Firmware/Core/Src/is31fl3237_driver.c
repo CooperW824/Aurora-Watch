@@ -9,7 +9,7 @@
 
 void FL3237_Init(FL3237_HandleTypeDef *handle) {
   // Set shutdown pin to output and set it high to enable the chip
-  HAL_GPIO_WritePin(handle->shutdown_port, handle->pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(handle->shutdown_port, handle->shutdown_pin, GPIO_PIN_SET);
 }
 
 void FL3237_SetControlRegister(FL3237_HandleTypeDef *handle,
@@ -22,7 +22,7 @@ void FL3237_SetControlRegister(FL3237_HandleTypeDef *handle,
 
 void FL3237_SetHardwareChipEnable(FL3237_HandleTypeDef *handle,
                                   GPIO_PinState state) {
-  HAL_GPIO_WritePin(handle->shutdown_port, handle->pin, state);
+  HAL_GPIO_WritePin(handle->shutdown_port, handle->shutdown_pin, state);
 }
 
 void FL3237_SetPWM(FL3237_HandleTypeDef *handle, uint8_t led_number,

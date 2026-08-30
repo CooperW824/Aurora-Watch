@@ -19,9 +19,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "is31fl3237_driver.h"
+#include "math.h"
 #include "stm32u0xx_hal.h"
 #include "timekeeping.h"
 #include "tmp1075_driver.h"
+
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -121,14 +123,15 @@ int main(void) {
 
   /* USER CODE END 2 */
 
-  // First we want to get the time from the user, for the demo, this can block
-  // indefinitely
-  HAL_UART_Transmit(&huart1, "Watch Ready", 11, UINT32_MAX);
-  HAL_UART_Receive(&huart1, time_str, 8, UINT32_MAX);
-  time_str[8] = 0; // Null terminator
+  // // First we want to get the time from the user, for the demo, this can
+  // block
+  // // indefinitely
+  // HAL_UART_Transmit(&huart1, "Watch Ready", 11, UINT32_MAX);
+  // HAL_UART_Receive(&huart1, time_str, 8, UINT32_MAX);
+  // time_str[8] = 0; // Null terminator
 
-  // One we get that time string, we set the RTC with the time
-  TIMEKEEPING_SetRTCFromString(&hrtc, time_str, 8);
+  // // One we get that time string, we set the RTC with the time
+  // TIMEKEEPING_SetRTCFromString(&hrtc, time_str, 8);
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   RTC_TimeTypeDef current_time;
@@ -370,7 +373,7 @@ static void MX_GPIO_Init(void) {
 void FL3237_Config() {
   fl3237_handle.i2c_bus = &hi2c1;
   fl3237_handle.shutdown_port = LED_SHUTDOWN_GPIO_Port;
-  fl3237_handle.pin = LED_SHUTDOWN_Pin;
+  fl3237_handle.shutdown_pin = LED_SHUTDOWN_Pin;
   fl3237_handle.address = FL3237_I2C_AD_TO_GND;
   fl3237_handle.max_transmit_timeout_ms = 100;
 
