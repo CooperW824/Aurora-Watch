@@ -1,7 +1,7 @@
 #ifndef TIMEKEEPING
 #define TIMEKEEPING
 
-#include "is31fl3237_driver.h"
+#include "is31fl3237.h"
 #include "stm32u0xx_hal.h"
 #include "stm32u0xx_hal_rtc.h"
 

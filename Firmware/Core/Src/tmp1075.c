@@ -1,4 +1,4 @@
-#include "tmp1075_driver.h"
+#include "tmp1075.h"
 #include "stm32u0xx_hal.h"
 #include "stm32u0xx_hal_i2c.h"
 

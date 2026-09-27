@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2026
  */
 
-#ifndef IS31FL3237_DRIVER
-#define IS31FL3237_DRIVER
+#ifndef IS31FL3237_H
+#define IS31FL3237_H
 
 #include "stm32u031xx.h"
 #include "stm32u0xx_hal.h"
@@ -99,4 +99,4 @@ FL3237_LED_SCALE FL3237_GetLEDScaling(FL3237_HandleTypeDef *handle,
 
 void FL3237_SetAllScaling(FL3237_HandleTypeDef *handle, FL3237_LED_SCALE scale);
 
-#endif /* IS31FL3237_DRIVER */
+#endif /* IS31FL3237_H */

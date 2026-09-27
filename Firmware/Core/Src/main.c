@@ -18,11 +18,11 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "is31fl3237_driver.h"
+#include "is31fl3237.h"
 #include "math.h"
 #include "stm32u0xx_hal.h"
 #include "timekeeping.h"
-#include "tmp1075_driver.h"
+#include "tmp1075.h"
 
 
 /* Private includes ----------------------------------------------------------*/

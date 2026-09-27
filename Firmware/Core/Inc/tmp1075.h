@@ -1,5 +1,5 @@
-#ifndef TMP1075_DRIVER
-#define TMP1075_DRIVER
+#ifndef TMP1075_H
+#define TMP1075_H
 
 #include "stm32u0xx_hal.h"
 
@@ -23,4 +23,4 @@ For the ambient air thermometer function, read the the temperature when the watc
 */
 int16_t TMP1075_OneShot(TMP1075_HandleTypeDef *handle);
 
-#endif /* TMP1075_DRIVER */
+#endif /* TMP1075_H */
