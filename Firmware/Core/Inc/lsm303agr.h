@@ -6,8 +6,8 @@
 #include "stm32u0xx_hal_i2c.h"
 #include <stdint.h>
 
-#define LSM303_ACCEL_ADDR 0b00110010
-#define LSM303_MAG_ADDR 0b00111100
+#define LSM303_ACCEL_ADDR 0b0011001
+#define LSM303_MAG_ADDR 0b0011110
 
 /* ============================================================
  * Register Addresses
@@ -66,10 +66,17 @@
 /* ============================================================
  * CTRL_REG1_A (20h): ODR3 ODR2 ODR1 ODR0 | LPen Zen Yen Xen
  * ============================================================ */
-#define LSM303_A_XEN (1U << 0)
-#define LSM303_A_YEN (1U << 1)
-#define LSM303_A_ZEN (1U << 2)
-#define LSM303_A_LPEN (1U << 3)
+#define LSM303_A_X_ENABLE (1U << 0)
+#define LSM303_A_X_DISABLE (0U << 0)
+
+#define LSM303_A_Y_ENABLE (1U << 1)
+#define LSM303_A_Y_DISABLE (0U << 1)
+
+#define LSM303_A_Z_ENABLE (1U << 2)
+#define LSM303_A_Z_DISABLE (0U << 2)
+
+#define LSM303_A_LP_ENABLE (1U << 3)
+#define LSM303_A_LP_DISABLE (0U << 3)
 
 #define LSM303_A_ODR_POWERDOWN (0x0U << 4)
 #define LSM303_A_ODR_1HZ (0x1U << 4)
@@ -86,9 +93,14 @@
  * CTRL_REG4_A (23h): BDU BLE FS1 FS0 HR ST1 ST0 SPI_ENABLE
  * ============================================================ */
 #define LSM303_A_SPI_ENABLE (1U << 0)
+#define LSM303_A_SPI_DISABLE (0U << 0)
 #define LSM303_A_HR (1U << 3)
-#define LSM303_A_BLE (1U << 6)
-#define LSM303_A_BDU (1U << 7)
+#define LSM303_A_LR (0U << 3)
+
+#define LSM303_A_BIG_ENDIAN (1U << 6)
+#define LSM303_A_LITLE_ENDIAN (0U << 6)
+#define LSM303_A_BLOCK_DATA_UPDATE_ENABLE (1U << 7)
+#define LSM303_A_BLOCK_DATA_UPDATE_DISABLE (0U << 7)
 
 #define LSM303_A_ST_NORMAL (0x0U << 1)
 #define LSM303_A_ST_0 (0x1U << 1)
@@ -116,6 +128,7 @@
 #define LSM303_M_REBOOT (1U << 6)
 #define LSM303_M_SOFT_RST (1U << 5)
 #define LSM303_M_LP (1U << 4)
+#define LSM303_M_HP (0U << 4)
 
 #define LSM303_M_ODR_10HZ (0x0U << 2)
 #define LSM303_M_ODR_20HZ (0x1U << 2)
@@ -168,7 +181,6 @@ typedef struct {
   uint8_t spi_enable;
 
   // CR5
-  uint8_t boot;
   uint8_t fifo_enable;
   // Rest of CR5 Skipped
 
@@ -177,7 +189,7 @@ typedef struct {
 
 typedef struct {
   // CR1
-  uint8_t temperature_compensation_enable;
+  // Temperature compensation skipped, will always be set to 1
   uint8_t reboot;
   uint8_t soft_rst;
   uint8_t low_power;
